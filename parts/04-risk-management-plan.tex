@@ -1,40 +1,212 @@
-% ============================================================
-% 4. RISK MANAGEMENT PLAN
-% ============================================================
+% Generated from the verified GP4 Skeleton snapshot.
+
+% Source GP4 Skeleton block 146
 \clearpage
-\section{Risk Management Plan}
+\section{Risk Management Plan}\label{sec:4}
+\subsection{Risk management approach}\label{sec:4.1}
+\subsubsection{Risk Identification Methodology}\label{sec:risk-identification-methodology}
+\begin{itemize}
+\item \textbf{Pre-mortem workshop:} During project planning, the Project Manager, HR, Compliance, IT, clinical department representatives, and LMS vendor will identify potential reasons the implementation could fail.
+% Source GP4 Skeleton block 147
+\item \textbf{Project documentation review:} Review the GP2 charter, project scope, WBS Dictionary, vendor requirements, and acceptance criteria to identify risks and dependencies.
+% Source GP4 Skeleton block 148
+\item \textbf{Category checklist:} Evaluate risks across technical, organizational, external, and project management categories, reviewing each major WBS deliverable.
+% Source GP4 Skeleton block 149
+\item \textbf{Ongoing identification:} Capture new risks as they arise during weekly project meetings, vendor reviews, migration testing, pilot evaluations, and formal change requests.
+\end{itemize}
 
-\subsection{Risk management approach}
-\subsubsection{Risk identification methodology}
-\placeholder{Insert methodology.}
 
-\subsubsection{Risk assessment criteria and scales}
-\placeholder{Define probability, impact, scoring, and rating thresholds.}
+% Source GP4 Skeleton block 151
+\subsubsection{Assessment Criteria and Scales}\label{sec:assessment-criteria-and-scales}
+Each risk receives a probability rating from 1 to 5, and an impact rating from 1 to 5. Impact is determined using the highest applicable consequence across schedule, effort/\allowbreak{}cost, or quality/\allowbreak{}compliance.
 
-\subsubsection{Risk monitoring and control process}
-\placeholder{Insert monitoring and control process.}
 
-\subsubsection{Risk reporting frequency and format}
-\placeholder{Insert reporting process.}
+% Source GP4 Skeleton block 152
+The following thresholds are proposed planning criteria for Meridian, not values established in the WBS Dictionary.
 
-\subsubsection{Risk escalation thresholds}
-\placeholder{Insert escalation thresholds.}
 
-\subsection{Risk register}
-% The Skeleton requires at least 12 risks.
-% This table is intentionally placed on landscape pages in the final document
-% if portrait layout makes the response-action column difficult to read.
-% Recommended columns: Risk ID, Description, Category, Probability, Impact,
-% Score, Response strategy, Specific response action, Owner, Trigger conditions.
-\placeholder{Insert risk register with at least 12 risks.}
+% Source GP4 Skeleton block 153
+\clearpage
+\begin{landscape}
+\begingroup
+\fontsize{9}{11}\selectfont
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.17}
+\setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
+\captionof{table}{Risk probability and impact scales}\label{tab:source-153}
+\addtocounter{table}{-1}
+\begin{longtable}{|L{\dimexpr 0.060000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.140000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.220000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.230000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.350000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries Score & \color{white}\bfseries Probability & \color{white}\bfseries Impact: Schedule & \color{white}\bfseries Impact: Effort /\allowbreak{} Cost & \color{white}\bfseries Impact: Quality /\allowbreak{} Compliance\\\hline
+\endfirsthead
+\multicolumn{5}{l}{\small\itshape Risk probability and impact scales (continued)}\\[4pt]
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries Score & \color{white}\bfseries Probability & \color{white}\bfseries Impact: Schedule & \color{white}\bfseries Impact: Effort /\allowbreak{} Cost & \color{white}\bfseries Impact: Quality /\allowbreak{} Compliance\\\hline
+\endhead
+\multicolumn{5}{r}{\footnotesize\itshape Continued on next page}\\
+\endfoot
+\endlastfoot
+\rowcolor{MeridianPale}
+1 & Rare, under 10\% & No milestone effect & Under 8 additional hours & No measurable effect\\\hline
+2 & Unlikely, 10--29\% & Less than 2 working days & 8--24 additional hours & Minor correction without affecting acceptance\\\hline
+\rowcolor{MeridianPale}
+3 & Possible, 30--49\% & 2--3 working days & 25--60 additional hours & Rework needed before acceptance\\\hline
+4 & Likely, 50--69\% & 4--5 working days or a milestone delay & 61--120 additional hours & Major deliverable or deployment-readiness impact\\\hline
+\rowcolor{MeridianPale}
+5 & Very likely, 70\% or greater & More than 5 working days or project completion threatened & Over 120 additional hours or unapproved additional funding & Certification integrity, security, compliance, or mandatory acceptance requirement compromised\\\hline
+\end{longtable}
+\endgroup
+\end{landscape}
 
-\subsection{Probability/impact matrix}
+
+% Source GP4 Skeleton block 154
+Risk Score = Probability \(\times\) Impact (1--25)
+
+
+% Source GP4 Skeleton block 155
+Risk tolerance zones:
+
+
+% Source GP4 Skeleton block 156
+\begin{itemize}
+\item \textbf{High (15--25):} Outside tolerance. Requires priority mitigation and escalation.
+% Source GP4 Skeleton block 157
+\item \textbf{Medium (7--14):} Within tolerance only with an active response and assigned owner.
+% Source GP4 Skeleton block 158
+\item \textbf{Low (1--6):} Monitor through routine project reviews.
+\end{itemize}
+
+
+% Source GP4 Skeleton block 159
+Risk ratings are preliminary project-team estimates and will be reassessed when actual testing, vendor, and stakeholder information becomes available.
+
+
+% Source GP4 Skeleton block 161
+\subsubsection{Monitoring and Control Process}\label{sec:monitoring-and-control-process}
+\begin{itemize}
+\item Each risk has an assigned owner responsible for monitoring its trigger condition and reporting changes during weekly risk reviews.
+% Source GP4 Skeleton block 162
+\item For ordinary risk triggers, the owner notifies the Project Manager within one working day and initiates the approved response within two working days. Sev-1 incidents include outages, authentication failures, data loss, security breaches and blocked core certification workflows. These incidents require immediate escalation and response, a hold on the affected deployment gate and a deployed, verified fix within 8 elapsed hours. Incident response takes precedence over the ordinary working-day risk-review cadence.
+% Source GP4 Skeleton block 163
+\item Risks are reassessed after response actions, major project milestones, migration reconciliation, pilot testing, and rollout authorization.
+% Source GP4 Skeleton block 164
+\item Triggered risks are recorded as issues when they materialize. Closed risks remain documented with the resolution, closure date, and supporting evidence.
+% Source GP4 Skeleton block 165
+\item Risk responses requiring changes to approved scope, funding, or schedule baselines follow the formal change control process.
+\end{itemize}
+
+
+% Source GP4 Skeleton block 167
+\subsubsection{Reporting Frequency and Format}\label{sec:reporting-frequency-and-format}
+\begin{itemize}
+\item \textbf{Weekly project status report:} counts of High, Medium and Low risks, the three highest-priority risks, score changes, triggered risks, mitigation progress and decisions needed.
+% Source GP4 Skeleton block 168
+\item \textbf{Stakeholder risk communication follows Part 5:} review risks in the weekly delivery/\allowbreak{}team process, provide monthly written summaries to CHRO/\allowbreak{}CFO and relevant stakeholders, and hold targeted risk/\allowbreak{}change meetings as needed. Escalate urgent incidents, threatened gates and required approvals when identified rather than waiting for routine reporting. No separate standing biweekly stakeholder review is required.
+% Source GP4 Skeleton block 169
+\item \textbf{Full risk register:} Maintained by the Project Manager in the team's approved shared project repository and updated after risk reviews or significant changes.
+\end{itemize}
+
+
+% Source GP4 Skeleton block 174
+\clearpage
+\subsubsection{Escalation Thresholds}\label{sec:escalation-thresholds}
+
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.17}
+\setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
+\captionof{table}{Risk escalation thresholds}\label{tab:source-174}
+\addtocounter{table}{-1}
+\begin{longtable}{|L{\dimexpr 0.480000\linewidth-2\tabcolsep-1.333333\arrayrulewidth\relax}|L{\dimexpr 0.350000\linewidth-2\tabcolsep-1.333333\arrayrulewidth\relax}|L{\dimexpr 0.170000\linewidth-2\tabcolsep-1.333333\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries Condition & \color{white}\bfseries Escalate To & \color{white}\bfseries Within\\\hline
+\endfirsthead
+\multicolumn{3}{l}{\small\itshape Risk escalation thresholds (continued)}\\[4pt]
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries Condition & \color{white}\bfseries Escalate To & \color{white}\bfseries Within\\\hline
+\endhead
+\multicolumn{3}{r}{\footnotesize\itshape Continued on next page}\\
+\endfoot
+\endlastfoot
+\rowcolor{MeridianPale}
+Any new or reassessed risk scoring 15 or higher & Project Manager and relevant functional lead & 1 working day\\\hline
+A risk owner cannot execute the planned response because of unavailable resources or dependencies & Project Manager & 1 working day\\\hline
+\rowcolor{MeridianPale}
+Risk threatens approved funding, rollout authorization, certification integrity, or mandatory acceptance criteria & Project Sponsor and responsible decision-maker & 1 working day\\\hline
+Actual or suspected unauthorized access to employee training records & Meridian IT Security Lead and appropriate organizational authorities & Immediately\\\hline
+\rowcolor{MeridianPale}
+Risk response requires changes to approved scope, cost, or schedule baselines & Project Manager for formal change control and approval & Before implementing the change\\\hline
+\end{longtable}
+\endgroup
+
+
+% Source GP4 Skeleton block 177
+\clearpage
+\begin{landscape}
+\subsection{Risk register}\label{sec:4.2}
+
+\begingroup
+\fontsize{8.3}{10.4}\selectfont
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.17}
+\setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
+\captionof{table}{Initial risk register}\label{tab:source-177}
+\addtocounter{table}{-1}
+\begin{longtable}{|L{\dimexpr 0.045000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.190000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.100000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.040000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.040000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.050000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.075000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.195000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.105000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.160000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries Risk ID & \color{white}\bfseries Risk description & \color{white}\bfseries Category & \color{white}\bfseries P\newline 1--5 & \color{white}\bfseries I\newline 1--5 & \color{white}\bfseries Score\newline P \(\times\) I & \color{white}\bfseries Response\newline strategy & \color{white}\bfseries Specific response action & \color{white}\bfseries Owner & \color{white}\bfseries Trigger conditions\\\hline
+\endfirsthead
+\multicolumn{10}{l}{\small\itshape Initial risk register (continued)}\\[4pt]
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries Risk ID & \color{white}\bfseries Risk description & \color{white}\bfseries Category & \color{white}\bfseries P\newline 1--5 & \color{white}\bfseries I\newline 1--5 & \color{white}\bfseries Score\newline P \(\times\) I & \color{white}\bfseries Response\newline strategy & \color{white}\bfseries Specific response action & \color{white}\bfseries Owner & \color{white}\bfseries Trigger conditions\\\hline
+\endhead
+\multicolumn{10}{r}{\footnotesize\itshape Continued on next page}\\
+\endfoot
+\endlastfoot
+\rowcolor{MeridianPale}
+R01 & Incomplete or inaccurate employee certification records cause migration errors or failed acceptance. & Technical & 4 & 5 & 20 & Mitigate & Clean and validate source records, trial-import samples, reconcile batches, and resolve exceptions before migration acceptance. WBS 5.1.2--5.3.3. & LMS Administrator /\allowbreak{} Technical Lead & Initial record match below 95\%, unresolved discrepancies\\\hline
+R02 & Converted training materials fail accessibility, functionality, or HR/\allowbreak{}trainer approval requirements. & Technical & 3 & 5 & 15 & Mitigate & Approve sample conversions, check accessibility and content, correct defects, and obtain HR/\allowbreak{}trainer sign-off. WBS 4.1.2--4.2.3. & Training Lead & Rejected materials, unresolved content defects\\\hline
+\rowcolor{MeridianPale}
+R03 & Incorrect role or department mappings assign employees the wrong mandatory training. & Technical & 3 & 5 & 15 & Mitigate & Validate role/\allowbreak{}department rules with HR and test representative assignments before approval. WBS 3.1.4, 6.1.2. & Vendor Configuration Lead & Incorrect mandatory assignments during testing\\\hline
+R04 & Clinical workloads or insufficient hospital devices delay training and departmental deployment. & Organizational & 4 & 4 & 16 & Mitigate & Confirm devices, scheduled training time, departmental contacts, and support coverage before each wave. WBS 8.1.1--8.1.3. & Project Manager /\allowbreak{} Training Lead & Missing device or staffing commitments, delayed training\\\hline
+\rowcolor{MeridianPale}
+R05 & Insufficient pilot participation or unavailable HR/\allowbreak{}Finance reviewers prevent representative testing. & Organizational & 3 & 4 & 12 & Mitigate & Confirm pilot roster and representative scenarios early, schedule testing and secure reviewer availability. WBS 6.1.1--6.1.2. & Project Manager & Incomplete pilot roster, unavailable participants\\\hline
+R06 & Vendor licensing, configuration, or support costs exceed approved funding. & External & 3 & 4 & 12 & Mitigate & Compare total vendor costs, secure CHRO/\allowbreak{}CFO approval, and verify contract pricing before commitment. WBS 2.2.1--2.2.2. & Project Manager & Costs exceed approved funding, unapproved charges\\\hline
+\rowcolor{MeridianPale}
+R07 & Vendor configuration delays prevent completion of migration readiness activities. & External & 3 & 4 & 12 & Mitigate & Establish contractual deliverables, monitor configuration progress, and resolve blockers before migration readiness approval. WBS 2.2.2, 3.3.2. & Vendor Configuration Lead & Missed configuration milestones, readiness not approved\\\hline
+R08 & Unauthorized access or insufficient audit logging compromises employee training records. & Technical & 2 & 5 & 10 & Mitigate & Review security controls, validate role permissions, and verify audit-log evidence before acceptance. WBS 2.1.2, 3.1.1--3.1.2. & Meridian IT Lead & Unauthorized access, missing or incomplete audit logs\\\hline
+\rowcolor{MeridianPale}
+R09 & LMS certification reports or completion updates fail accuracy or five-minute recording requirements. & Technical & 3 & 5 & 15 & Mitigate & Test certification cases, reconcile report fields, and verify completion updates within five minutes. WBS 3.2.1, 6.2.3. & LMS Administrator & Incorrect reports, updates exceed five minutes\\\hline
+R10 & Departments continue using paper logs without an approved transition and renewal follow-up process. & Organizational & 3 & 4 & 12 & Mitigate & Define paper-log cutover, assign report-review owners, and approve department readiness before retiring paper workflows. WBS 7.2.1, 8.1.3. & HR Operations Lead & Unapproved paper-log process, missing follow-up owner\\\hline
+\rowcolor{MeridianPale}
+R11 & Unapproved enhancements expand project scope and disrupt approved deliverables. & Project Management & 3 & 4 & 12 & Avoid & Apply approved scope boundaries and record enhancement requests in the deferred-feature register. WBS 1.2.2, 9.1.1--9.2.2. & Project Manager & Requests for excluded or unapproved functionality\\\hline
+R12 & Delays in pilot remediation or authorization postpone deployment waves and project closure. & Project Management & 3 & 5 & 15 & Mitigate & Track pilot defects, prioritize retesting, obtain rollout authorization, and monitor deployment dependencies. WBS 6.3.1--6.3.2, 8.1.1. & Project Manager /\allowbreak{} Technical Lead & Unresolved critical defects, delayed CHRO/\allowbreak{}CFO approval\\\hline
+\rowcolor{MeridianPale}
+R13 & LMS performance fails the SSO target of at least 95\% of sign-ins in under 3.0 seconds or the 5,000-concurrent-user requirement. & Technical & 3 & 4 & 12 & Mitigate & Conduct sign-in and concurrency testing, investigate failures, and retest after remediation. WBS 6.2.1--6.2.2. & Meridian IT Lead /\allowbreak{} Vendor Performance-Test Lead & Sign-in target missed, 5,000-user load test fails\\\hline
+R14 & Vendor availability or recovery capabilities fail the required service targets. & External & 2 & 5 & 10 & Mitigate & Review vendor SLA/\allowbreak{}recovery evidence, monitor availability, and escalate gaps before rollout. WBS 2.1.3, 6.2.4--6.2.5. & Meridian IT Lead & Availability below 99\%, recovery evidence fails targets\\\hline
+\rowcolor{MeridianPale}
+R15 & Inadequate onboarding guides or training support prevent users from completing required LMS tasks. & Organizational & 3 & 4 & 12 & Mitigate & Validate role-specific guides with users, prepare support materials, and confirm competence during training. WBS 7.1.1--7.1.3, 8.1.2. & Training Lead & Users cannot complete tasks independently, training gaps\\\hline
+\end{longtable}
+\endgroup
+\end{landscape}
+
+
+% Source GP4 Skeleton block 180
+\clearpage
+\subsection{Probability/\allowbreak{}impact matrix}\label{sec:4.3}
+
 \begin{figure}[H]
-  \centering
-  \IfFileExists{figures/meridian_risk_matrix.pdf}{%
-    \includegraphics[width=0.78\textwidth,height=0.58\textheight,keepaspectratio]{figures/meridian_risk_matrix.pdf}%
-  }{\fbox{\parbox[c][1.5in][c]{0.75\textwidth}{\centering
-    Risk matrix placeholder. Upload \texttt{figures/meridian\_risk\_matrix.pdf}.}}}
-  \caption{Probability/impact matrix for the Meridian Health LMS project.}
-  \label{fig:risk-matrix}
+\centering
+\includegraphics[page=1,width=\linewidth,height=7.8in,keepaspectratio]{figures/meridian_risk_matrix.pdf}
+\caption{Risk heat map: 15 initial risk ratings, with 6 High, 9 Medium and 0 Low.}\label{fig:risk-matrix}
 \end{figure}
+\clearpage
+
+
+% Source GP4 Skeleton block 189
+\textbf{Six risks exceed the proposed tolerance threshold:} R01 (20), R04 (16), and R02, R03, R09, and R12 (15 each). These risks require priority mitigation because they threaten certification accuracy, accessible training content, mandatory assignments, departmental rollout, completion reporting, or deployment authorization.
+
+
+% Source GP4 Skeleton block 190
+The immediate priority is to validate employee certification records, confirm training materials and assignment rules, secure clinical department readiness, and establish testing and authorization checkpoints. The goal is to reduce these risks to the Medium zone before the project reaches the corresponding acceptance or deployment gates. Nine risks are currently Medium and require active monitoring. None are classified as Low.

@@ -45,6 +45,8 @@
 \usepackage{longtable}
 \usepackage{makecell}
 \usepackage{multirow}
+\usepackage{pdflscape}
+\usepackage{needspace}
 \usepackage{colortbl}
 \usepackage{ragged2e}
 
@@ -84,22 +86,25 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\small\color{MeridianGray}Meridian Health LMS Implementation}
-\fancyhead[R]{\small\color{MeridianGray}Comprehensive Project Plan v1.0}
-\fancyfoot[L]{\small\color{MeridianGray}Team [X] \textbar\ IMT 583 GP4}
+\fancyhead[R]{\small\color{MeridianGray}Project Plan v1.0 (proposed)}
+\fancyfoot[L]{\small\color{MeridianGray}BCDK \textbar\ IMT 583 GP4}
 \fancyfoot[R]{\small\color{MeridianGray}Page \thepage}
 \renewcommand{\headrulewidth}{0.35pt}
 \renewcommand{\footrulewidth}{0pt}
 \renewcommand{\headrule}{\hbox to\headwidth{\color{MeridianRule}\leaders\hrule height \headrulewidth\hfill}}
 
 % ---------- Links and PDF metadata ----------
-\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks,hypertexnames=false]{hyperref}
 \hypersetup{
   pdftitle={Meridian Health LMS Comprehensive Project Plan},
   pdfauthor={IMT 583 GP4 Team}
 }
 
 % ---------- Utility commands ----------
-\newcommand{\placeholder}[1]{\textit{\color{MeridianGray}[Insert #1]}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
 
 \begin{document}
 
@@ -116,27 +121,28 @@
 {\LARGE Comprehensive Project Plan\par}
 \vspace{0.55in}
 
-\renewcommand{\arraystretch}{1.45}
-\begin{tabularx}{\textwidth}{|L{1.55in}|Y|}
-\hline
-\rowcolor{MeridianPurple}
-\color{white}\bfseries Item & \color{white}\bfseries Detail\\
-\hline
-Plan version & 1.0 (proposed baseline; subject to required approvals)\\
-\hline
-Project sponsor & Chief Human Resources Officer (CHRO)\\
-\hline
-Project manager & [Project Manager / Team] \\
-\hline
-Planned duration & [Confirm approved start date, end date, and working-day duration]\\
-\hline
-Related documents & GP1 Project Proposal; GP2 Project Charter and Build vs. Buy Analysis; GP3 Kickoff Presentation\\
-\hline
-Gantt chart & Submitted separately: [Gantt chart filename; full view and detail views]\\
-\hline
-Team members & \makecell[l]{Lincoln Brennan; Kyle Chen;\\ Kshitij Dani; Sekoya Kinsey}\\
-\hline
-\end{tabularx}
+{\large\bfseries\color{MeridianPurple}IMT 583 GP4\par}
+\vspace{0.20in}
+\textbf{Prepared by}\\[4pt]
+Lincoln Brennan; Kyle Chen; Kshitij Dani; Sekoya Kinsey
+
+\vspace{0.20in}
+\textbf{Prepared November 22, 2026}\\[6pt]
+Planning version 1.0, proposed baseline; subject to required approvals.
+
+\vspace{0.22in}
+\textbf{Project sponsor:} Chief Human Resources Officer (CHRO)\\[6pt]
+\textbf{Project management:} BCDK consulting team for Meridian Health\\[6pt]
+\textbf{Planning period:} January 1, 2027--January 6, 2028\\
+First working day: January 4, 2027; current working closure forecast:
+January 6, 2028. The original December 31, 2027 completion target remains
+visible for variance reporting. Revised completion-baseline approval is pending.
+
+\vspace{0.15in}
+\textbf{Related documents:} GP1 Project Proposal; GP2 Project Charter and
+Build vs. Buy Analysis; GP3 Kickoff Presentation.\\[6pt]
+The full WBS dictionary, WBS sheets, Gantt overview and six detail panels,
+and risk matrix are included in this report.
 
 \vfill
 \begin{center}

@@ -1,28 +1,228 @@
-% ============================================================
-% 6. QUALITY MANAGEMENT PLAN
-% ============================================================
+% Generated from the verified GP4 Skeleton snapshot.
+
+% Source GP4 Skeleton block 222
 \clearpage
-\section{Quality Management Plan}
+\begin{landscape}
+\clearpage
+\section{Quality Management Plan}\label{sec:6}
+\subsection{Quality standards}\label{sec:6.1}
+\subsubsection{Quality objectives and acceptance criteria by deliverable}\label{sec:quality-objectives-and-acceptance-criteria-by-deliverable}
 
-\subsection{Quality standards}
-\placeholder{Insert quality standards and deliverable-level acceptance criteria.}
+\begingroup
+\fontsize{9}{11}\selectfont
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.17}
+\setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
+\captionof{table}{Quality objectives and acceptance criteria by deliverable}\label{tab:source-222}
+\addtocounter{table}{-1}
+\begin{longtable}{|L{\dimexpr 0.055000\linewidth-2\tabcolsep-1.250000\arrayrulewidth\relax}|L{\dimexpr 0.190000\linewidth-2\tabcolsep-1.250000\arrayrulewidth\relax}|L{\dimexpr 0.255000\linewidth-2\tabcolsep-1.250000\arrayrulewidth\relax}|L{\dimexpr 0.500000\linewidth-2\tabcolsep-1.250000\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID & \color{white}\bfseries Deliverable & \color{white}\bfseries Quality Objective & \color{white}\bfseries Acceptance Criteria\\\hline
+\endfirsthead
+\multicolumn{4}{l}{\small\itshape Quality objectives and acceptance criteria by deliverable (continued)}\\[4pt]
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID & \color{white}\bfseries Deliverable & \color{white}\bfseries Quality Objective & \color{white}\bfseries Acceptance Criteria\\\hline
+\endhead
+\multicolumn{4}{r}{\footnotesize\itshape Continued on next page}\\
+\endfoot
+\endlastfoot
+\rowcolor{MeridianPale}
+1.0 & Requirements and Verification Record & Ensure complete, traceable mapping of all business, technical, regulatory, and financial requirements. & \textbullet{} 100\% of functional, security, HIPAA, and certification-record requirements mapped to work packages.\newline \textbullet{} Zero unmapped high-priority clinical or compliance requirements.\newline \textbullet{} Formal written sign-off obtained from CHRO (sponsor), IT, and Compliance Leads, Finance approves budget constraints.\\\hline
+2.0 & Vendor Assessment and Selection Record & Objective evaluation of enterprise LMS platform candidates against business and compliance needs. & \textbullet{} Standardized scoring matrix completed across technical, compliance, and cost factors.\newline \textbullet{} Evaluation confirms vendor capabilities for mandatory certification tracking and BCDR.\newline \textbullet{} Vendor selection approved by CHRO, financial commitments approved by CFO.\\\hline
+\rowcolor{MeridianPale}
+3.0 & Configured LMS and Implementation Documentation & Secure, available LMS with Meridian SSO, controlled employee accounts and a verified import process. & \textbullet{} At least 99\% monthly availability, using vendor-contract maintenance exclusions.\newline \textbullet{} At least 95\% of SSO sign-ins complete in under 3.0 seconds on Meridian's network, vendor configures 3.1.1, Technical Lead tests access/\allowbreak{}security in 6.1.2, and Meridian IT verifies latency in 6.2.1.\newline \textbullet{} RBAC is configured and verified for employee roles across all sites, IT approves identity configuration and owns ongoing access support.\newline \textbullet{} Approved employee-record imports are reconciled, ongoing automated HRIS synchronization is not required.\\\hline
+4.0 & Digitized Training Materials & Existing HR-approved training materials and packaged courses converted into standardized digital formats for LMS delivery, replacing reliance on legacy paper binders and supporting existing training workflows. & \textbullet{} Existing packaged compliance courses must meet the applicable SCORM 1.2 or xAPI requirements supported by the selected LMS. These standards apply only to existing packaged courses where applicable and do not require converting individual PDF, DOCX, PPTX, or Markdown materials into SCORM or xAPI packages.\newline \textbullet{} At least 80\% of suitable materials are converted by March 10 (4.2.1), with all approved in-scope conversion outputs reviewed and finalized by March 23 (4.2.3).\newline \textbullet{} At least 85\% receive HR/\allowbreak{}trainer approval on initial review by March 17, all rejections are corrected and final publication versions approved before import and the May 6 acceptance gate.\newline \textbullet{} All in-scope converted training materials and existing packaged courses are reviewed against WCAG 2.2 Level AA accessibility requirements, as applicable to their format and content. The Training Lead retains the accessibility checklist and review evidence, with HR/\allowbreak{}IT review. Identified accessibility nonconformities are corrected and retested before acceptance.\newline \textbullet{} Eight of ten test staff complete a standard module without assistance.\\\hline
+\rowcolor{MeridianPale}
+5.0 & Data Migration Plan and Validated Records & High-accuracy ingestion and transformation of historical completion logs and credentials. & \textbullet{} At least 95\% initial record match across all required fields against validated sources, missing records count as failures (5.3.1).\newline \textbullet{} Every discrepancy is logged, investigated, corrected and rechecked, no unexplained count difference or unverified certification is accepted (5.3.2--5.3.3).\newline \textbullet{} IT accepts recovery readiness, HR record owners and IT/\allowbreak{}LMS administrators and Compliance accept accuracy/\allowbreak{}completeness by May 6, 2027. Subsequent updates are revalidated before each rollout wave (8.1.3).\\\hline
+6.0 & Pilot Evaluation and Rollout Recommendation & Validate LMS workflows and readiness in HR and Finance, including representative clinical-role and certification scenarios. & \textbullet{} 100\% of critical pilot scenarios pass, covering assignments, learner completion, SSO access and administrative verification.\newline \textbullet{} Zero Severity-1 or Severity-2 defects remain open at pilot sign-off.\newline \textbullet{} HR/\allowbreak{}Finance pilot managers, HR and IT accept results, clinical trainers and Compliance review relevant scenarios. CHRO authorizes rollout and CFO confirms funding under 6.3.2.\\\hline
+\rowcolor{MeridianPale}
+7.0 & Employee Onboarding and Training Guide & Employee onboarding documentation and support, with IT operating runbooks for handover. & \textbullet{} Employees use the onboarding guide to open and complete assigned training without project-team help, failed steps are revised and retested.\newline \textbullet{} IT verifies its operating runbooks and administrative tasks separately during handover.\newline \textbullet{} Monthly HR administration hours reduce by 60--65\% by June 9, 2028, measured from final-wave completion on December 9, 2027. The PM assesses the benefit using HR Records Lead logs and the Section 6.3 baseline. This post-rollout benefit does not delay project closure.\\\hline
+8.0 & Phased Rollout and Operational Handover & Controlled organizational deployment across sites with complete transfer of administrative responsibilities. & \textbullet{} Deployment smoke tests pass across all departmental waves with zero unhandled system errors.\newline \textbullet{} Final expenditure report verified within approved funding limits.\newline \textbullet{} IT/\allowbreak{}LMS administrators and HR record owners sign formal operational acceptance and transfer forms.\\\hline
+\rowcolor{MeridianPale}
+9.0 & Future Feature Register & Assess deferred enhancements and transfer a prioritized register to an operational owner without implementing unapproved future features. & \textbullet{} Requests have IDs, requester, description, rationale and status (9.1.1).\newline \textbullet{} Retained requests have indicative benefits, dependencies and effort assessments (9.2.1).\newline \textbullet{} PM and CHRO review priorities, CHRO endorses them and the operational owner accepts the register before final closure (9.2.2).\newline \textbullet{} Future implementation remains subject to separate approval.\\\hline
+\end{longtable}
+\endgroup
+\end{landscape}
 
-\subsection{Quality assurance activities}
-\subsubsection{Reviews and inspections planned}
-\placeholder{Insert review schedule, reviewers, and outputs.}
 
-\subsubsection{Testing approach}
-\placeholder{Insert testing approach.}
+% Source GP4 Skeleton block 225
+\subsubsection{Technical Standards}\label{sec:technical-standards}
+\begin{itemize}
+\item \textbf{Interoperability \& Content Standards:} The LMS must support vendor-compatible formats for existing HR-approved training materials, including PDF, DOCX, PPTX, and Markdown. Existing packaged courses must comply with SCORM 1.2 or xAPI standards where applicable and supported by the selected LMS for tracking learner progress, quiz scores, and course completion. Individual converted documents are not required to be converted into SCORM or xAPI packages. Any additional content development or packaging beyond the existing approved materials and courses is subject to the formal change request process defined in Section 1.11.
+% Source GP4 Skeleton block 226
+\item \textbf{Security \& Privacy Standards:} Meridian IT owns RBAC, privileged administration, identity configuration and the IT-based LMS Administrator role. IT approves least-privilege business/\allowbreak{}content permissions for employees, HR, trainers and managers. The platform retains the specified HIPAA/\allowbreak{}PHI controls and requires Meridian InfoSec acceptance before go-live. Employee learner access remains internal-network only. IT may approve time-limited vendor sandbox/\allowbreak{}test accounts for implementation. These do not grant external learner access or unrestricted production access. Production changes use IT-controlled, supervised implementation procedures with audit logging.
+% Source GP4 Skeleton block 227
+\item \textbf{Performance \& Availability Standards:} Provide at least 99\% monthly availability using maintenance exclusions defined in the vendor contract. At least 95\% of SSO sign-ins complete in under 3.0 seconds, measured from valid-credential submission to authenticated-session availability on Meridian's network. Page-load latency remains under 2.0 seconds at the 95th percentile under the representative 5,000-concurrent-user workload. Completed training appears in employee records and standard reports within 5 minutes. Recovery evidence supports service restoration within 8 hours and maximum recorded-activity loss of 24 hours. Shift-level observations supplement the monthly availability measure.
+\end{itemize}
 
-\subsubsection{Validation methods}
-\placeholder{Insert validation methods.}
 
-\subsection{Quality control measures}
-\subsubsection{Quality metrics and targets}
-\placeholder{Insert metric, target, measurement method, timing, and owner.}
+% Source GP4 Skeleton block 230
+\subsubsection{Documentation Standards}\label{sec:documentation-standards}
+\begin{itemize}
+\item \textbf{Central Repository \& Structure:} Google Drive contains the academic authoring files, including the GP4 Skeleton and editable workbook. Meridian OneDrive is the proposed repository for approved project and operational records, structured into a maximum of four directory levels. The PM publishes approved snapshots and maintains the version register. IT verifies retention settings and document-recovery arrangements before operational handover.
+% Source GP4 Skeleton block 231
+\item \textbf{Standard Naming Convention:} All project artifacts must adhere strictly to the standardized naming convention: MeridianLMS\_\allowbreak{}[TopFolder]\_\allowbreak{}[SecondFolder]\_\allowbreak{}[ThirdFolder]\_\allowbreak{}[ItemType]\_\allowbreak{}[Name\_\allowbreak{}YYYYMMDD].
+% Source GP4 Skeleton block 232
+\item \textbf{Version Control \& Governance:} Draft deliverables use v0.x. Approved baselines are retained as v1.0 PDF snapshots with their editable sources and approval records. The PM preserves superseded versions and increments approved revisions, for example v1.1, through change control. OneDrive version history supports document recovery subject to IT verification. No configured nightly automated backup job is assumed. LMS recovery requirements remain separate.
+% Source GP4 Skeleton block 233
+\item \textbf{Access Control:} Project-document permissions are separate from LMS permissions. PM maintains the approved document set. IT, HRIS and Compliance review it. Vendor leads receive only scoped technical-folder permissions. These document permissions confer no LMS learner or privileged production access. Meridian IT approves and audits sandbox implementation accounts separately.
+\end{itemize}
 
-\subsubsection{Defect tracking approach}
-\placeholder{Insert defect severity definitions, tracking method, and response.}
 
-\subsubsection{Corrective action process}
-\placeholder{Insert corrective action process.}
+% Source GP4 Skeleton block 238
+\clearpage
+\begin{landscape}
+\subsection{Quality assurance activities}\label{sec:6.2}
+\subsubsection{Reviews and Inspections Planned}\label{sec:reviews-and-inspections-planned}
+The planned reviews, milestones, reviewers and required outputs are defined below:
+
+
+\begingroup
+\fontsize{9}{11}\selectfont
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.17}
+\setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
+\captionof{table}{Quality assurance reviews and inspections}\label{tab:source-238}
+\addtocounter{table}{-1}
+\begin{longtable}{|L{\dimexpr 0.200000\linewidth-2\tabcolsep-1.250000\arrayrulewidth\relax}|L{\dimexpr 0.270000\linewidth-2\tabcolsep-1.250000\arrayrulewidth\relax}|L{\dimexpr 0.220000\linewidth-2\tabcolsep-1.250000\arrayrulewidth\relax}|L{\dimexpr 0.310000\linewidth-2\tabcolsep-1.250000\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries Review & \color{white}\bfseries When (WBS ID) & \color{white}\bfseries Reviewers & \color{white}\bfseries Output\\\hline
+\endfirsthead
+\multicolumn{4}{l}{\small\itshape Quality assurance reviews and inspections (continued)}\\[4pt]
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries Review & \color{white}\bfseries When (WBS ID) & \color{white}\bfseries Reviewers & \color{white}\bfseries Output\\\hline
+\endhead
+\multicolumn{4}{r}{\footnotesize\itshape Continued on next page}\\
+\endfoot
+\endlastfoot
+\rowcolor{MeridianPale}
+Requirements Walkthrough & End of WBS 1.0 & CHRO, HR Lead, IT Lead, Compliance Lead, PM & Approved Requirements and Verification Record\\\hline
+Vendor Assessment Review & End of WBS 2.0 & CHRO, CFO, IT Lead, PM & Signed Vendor Assessment and Selection Record and procurement approval\\\hline
+\rowcolor{MeridianPale}
+Pre-Migration Data Mapping Review & Mappings approved in 5.1.1 before trial import 5.1.3, trial verified before bulk import 5.2.1 & Technical Lead /\allowbreak{} integration coordination, Meridian IT, LMS Administrator /\allowbreak{} HRIS coordination, HR and Compliance reviewers & Approved source-to-target mappings and recovery rules, verified trial results and authorization to bulk-import\\\hline
+Content Conversion \& Quality Review & Weekly during WBS 4.0 & Training Lead, Nurse Educators /\allowbreak{} SMEs & Approved Digital Module Inventory \& SME Sign-Offs\\\hline
+\rowcolor{MeridianPale}
+Pilot Preparation Readiness \& Security Clearance & Configuration, accepted migration and guides ready before May 7, roster/\allowbreak{}scenarios approved in 6.1.1 by May 11 before May 12 learner UAT & Technical /\allowbreak{} Quality Lead, Meridian IT /\allowbreak{} InfoSec reviewer, LMS Administrator, HR & Basic SSO/\allowbreak{}RBAC configuration checks, accepted migration and guides permit controlled preparation. 6.1.1 completes the roster/\allowbreak{}scenario approval, full pilot UAT acceptance is obtained later under 6.3.2.\\\hline
+Go-Live Readiness Review & After 8.1.1 and before 8.1.2, repeat each wave's activation checks under 8.1.3 & IT, HR record owners and IT/\allowbreak{}LMS administrators, participating department managers, CHRO rollout authorization already recorded under 6.3.2 & Initial rollout readiness and documented go/\allowbreak{}no-go for each departmental wave. Operational handover and closure are separate reviews under 8.3.1--8.3.2.\\\hline
+\rowcolor{MeridianPale}
+Pilot UAT Acceptance \& Rollout Authorization & 6.1.2 and 6.2.1--6.2.5 evidence, 6.3.1 retest, then 6.3.2 by June 17 & HR/\allowbreak{}Finance pilot managers, HR, IT, Technical/\allowbreak{}Quality Lead, CHRO/\allowbreak{}CFO & Accepted UAT/\allowbreak{}pilot report, 100\% critical pass, zero Sev-1/\allowbreak{}2 defects, rollout authorization and funding confirmation\\\hline
+Stabilization, Operational Handover \& Closure & Hypercare Dec 10--23, 8.3.1 Dec 27--Jan 3, 8.3.2 Jan 4--6 & HRIS/\allowbreak{}L\&D hypercare owner, IT/\allowbreak{}LMS administrators and HR record owners, PM, CHRO and CFO & Accepted hypercare/\allowbreak{}incident evidence, operational ownership transfer, CHRO completion and CFO financial closure\\\hline
+\end{longtable}
+\endgroup
+\end{landscape}
+
+
+% Source GP4 Skeleton block 241
+\subsubsection{Testing Approach}\label{sec:testing-approach}
+\begin{itemize}
+\item \textbf{Configuration \& Import Testing:} Verify Meridian SSO account mapping, valid and invalid sign-ins, authorized role access, employee import field validation and rejection handling. The vendor configures SSO in 3.1.1. Meridian IT approves identity settings and owns support. The Technical Lead coordinates functional/\allowbreak{}security evidence under 6.1.2. Test certification reports for current, overdue and expiring cases. Automated email/\allowbreak{}calendar reminders and ongoing HRIS synchronization are excluded.
+% Source GP4 Skeleton block 242
+\item \textbf{System \& Performance Load Testing:} Under 6.2.1--6.2.2, test representative activities at 5,000 concurrent users. At least 95\% of SSO sign-ins must finish in under 3.0 seconds and P95 page-load latency must remain under 2.0 seconds. Under 6.2.3, verify completion appears in employee records and reports within 5 minutes. Retain failures, remediation and retest evidence before 6.3.2 rollout approval.
+% Source GP4 Skeleton block 243
+\item \textbf{Role-Based Access \& Security Audit:} Verify Meridian IT ownership of all administrator and privileged identity/\allowbreak{}record-maintenance roles. Test the IT-approved least-privilege matrix for employee, HR, trainer and manager business/\allowbreak{}content permissions. Verify sandbox-only vendor access, supervised IT-controlled production changes and the internal-network boundary. Retain account/\allowbreak{}role test results and traceable approvals.
+% Source GP4 Skeleton block 244
+\item \textbf{User Acceptance Testing (UAT):} May 7--11 is controlled HR/\allowbreak{}Finance pilot preparation and monitoring under 6.1.1. Approve participant availability, test scenarios and criteria before learner UAT begins May 12. Execute functional, SSO, access/\allowbreak{}security, accessibility, completion and certification-report scenarios May 12--20 with appropriate clinical/\allowbreak{}Compliance review. Remediate/\allowbreak{}retest May 21--June 17. Full UAT acceptance and rollout authorization occur under 6.3.2. Testing of instructional activities, quiz logic, and media assets applies only to existing packaged courses or approved source materials that contain those elements.
+\end{itemize}
+
+
+% Source GP4 Skeleton block 247
+\subsubsection{Validation Methods}\label{sec:validation-methods}
+\begin{itemize}
+\item \textbf{SME Content Validation:} Representative existing clinical training materials and packaged courses are reviewed by nurse educators using appropriate learner accounts to verify that the converted content preserves the original approved instructional material. For existing packaged courses that contain instructional activities, quiz logic, or media assets, nurse educators verify that these elements are preserved where supported by the selected LMS. Validation does not include creating new curriculum, instructional videos, quizzes, or interactive learning materials.
+% Source GP4 Skeleton block 248
+\item \textbf{Field-by-Field Record Reconciliation:} Automated reconciliation scripts compare all migrated legacy records against source HR files across Employee ID, Certification Type, Completion Date, and Expiration Date.
+% Source GP4 Skeleton block 249
+\item \textbf{Hypercare Ticket \& Support Monitoring:} HRIS/\allowbreak{}L\&D owns the 14 calendar-day stabilization period after the final departmental wave, planned for December 10--23 following December 9 wave completion. IT and vendor support resolve technical incidents under 8.2.1--8.2.2. Retain triage, resolution and retest evidence. Accept stabilization before 8.3.1 handover on December 27. Ongoing service support transfers to operational owners after handover.
+\end{itemize}
+
+
+% Source GP4 Skeleton block 254
+\clearpage
+\begin{landscape}
+\subsection{Quality control measures}\label{sec:6.3}
+\subsubsection{Quality Metrics and Targets}\label{sec:quality-metrics-and-targets}
+The quality metrics, thresholds, evidence, timing and owners are defined below:
+
+
+\begingroup
+\fontsize{9}{11}\selectfont
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.17}
+\setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
+\captionof{table}{Quality metrics, targets, timing and owners}\label{tab:source-254}
+\addtocounter{table}{-1}
+\begin{longtable}{|L{\dimexpr 0.160000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.250000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.230000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.230000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.130000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries Metric & \color{white}\bfseries Target & \color{white}\bfseries How Measured & \color{white}\bfseries When & \color{white}\bfseries Owner\\\hline
+\endfirsthead
+\multicolumn{5}{l}{\small\itshape Quality metrics, targets, timing and owners (continued)}\\[4pt]
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries Metric & \color{white}\bfseries Target & \color{white}\bfseries How Measured & \color{white}\bfseries When & \color{white}\bfseries Owner\\\hline
+\endhead
+\multicolumn{5}{r}{\footnotesize\itshape Continued on next page}\\
+\endfoot
+\endlastfoot
+\rowcolor{MeridianPale}
+Training Material Conversion Rate & At least 80\% converted by March 10, all approved in-scope outputs finalized by March 23 and available by May 6 & Converted modules divided by total identified suitable source materials & Conversion 4.2.1 by March 10, final approval 4.2.3 by March 23, publication/\allowbreak{}acceptance by May 6 & Training Lead\\\hline
+Initial HR Content Approval Rate & 85\% initial review approval & Approved modules divided by total modules submitted for HR/\allowbreak{}SME review & Initial review by March 17, revisions and final approval by March 23, before May 6 acceptance & Training /\allowbreak{} L\&D Lead\\\hline
+\rowcolor{MeridianPale}
+Migrated Record Accuracy & At least 95\% initial record match, every discrepancy resolved and rechecked before batch acceptance & Compare all required fields per source record with the LMS, missing records fail. Reconcile counts and retain exception/\allowbreak{}correction evidence. & 5.3.1--5.3.3, before May 6, 2027, updated records checked before each wave under 8.1.3 & LMS Administrator /\allowbreak{} HRIS coordination, HR Records Lead, HR/\allowbreak{}Compliance acceptance\\\hline
+LMS Functional Test Pass Rate & 95\% overall pass, 100\% critical pass & Successfully executed test cases divided by total executed test cases in Jira & Pilot tests preparation/\allowbreak{}monitoring: May 7--11\newline Learner testing: May 12-20\newline Scheduled load test: May 12-17\newline Retest and acceptance before 6.3.2 approval by June 17 & Quality Lead\\\hline
+\rowcolor{MeridianPale}
+Compliance Reporting Accuracy & 100\% report agreement & Verification of LMS audit reports against validated source completion logs & Pilot evaluation phase & Compliance Officer \& LMS Admins\\\hline
+SSO Access \& Sign-in Performance & Authorized test accounts sign in and receive correct role access, at least 95\% of sign-ins finish in under 3.0 seconds & SSO/\allowbreak{}RBAC scripts and timed sign-in samples from valid credentials to authenticated session, retain results at 5,000-user load & 3.1.1 configuration, 6.1.2 access/\allowbreak{}security tests, 6.2.1 latency before 6.3.2 rollout approval & Vendor Configuration Lead, Meridian IT owner, Technical /\allowbreak{} Quality Lead\\\hline
+\rowcolor{MeridianPale}
+System Availability (Uptime) & At least 99\% monthly availability with contract-defined maintenance exclusions & APM monthly eligible service time minus unplanned downtime, using agreed contractual exclusions, retain incident evidence & Monthly post-launch & IT Lead \& Vendor Cloud Support\\\hline
+Page Load Time /\allowbreak{} Latency (P95) & P95 page-load latency under 2.0 seconds at 5,000 concurrent users & Automated load testing tools measuring concurrency across facilities & Scheduled load test: May 12--17 under WBS 6.2.2, before pilot approval. Weekly staging/\allowbreak{}UAT observations are monitoring. Additional load-test cycles require an approved effort and schedule allowance. & Technical Lead\\\hline
+\rowcolor{MeridianPale}
+HR Administrative Time Reduction & 60--65\% reduction from baseline & HR Records Lead logs monthly hours for training assignments, certification tracking, reporting and renewal follow-up. Baseline B is average monthly hours in February--April 2027. Post-rollout P is average monthly hours in March--May 2028. Reduction = (B - P) /\allowbreak{} B \(\times\) 100. Use the same activity categories and record population or workload changes. & Assessment due June 9, 2028, six months after final-wave completion on December 9, 2027. & Project Manager assesses. HR Records Lead owns operational logs.\\\hline
+Concurrent Capacity & At least 5,000 concurrent users meeting sign-in, page-load and recording targets & Representative synthetic workload, signed load report, failures and retest results & 6.2.2 before 6.3.2 rollout approval, monitor under 8.2.1 & Selected-vendor Performance-Test Lead with Meridian IT\\\hline
+\rowcolor{MeridianPale}
+Completion Recording Delay & Training completion visible in employee record and standard reports within 5 minutes & Compare known completion timestamps to record/\allowbreak{}report visibility, retain sample and exception evidence & 6.2.3 during pilot, resolved before 6.3.2, monitor under 8.2.1 & LMS Administrator with HR/\allowbreak{}Compliance verification\\\hline
+Recovery \& Maximum Data Loss & Restore service within 8 hours, no more than 24 hours of recorded activity lost & Vendor recovery-test report, backup evidence to designated OneDrive directory, and verified restoration/\allowbreak{}loss timestamps, gaps resolved before approval & 6.2.5 before 6.3.2 rollout approval, incidents tracked under 8.2.2 & Meridian IT Lead with vendor recovery support\\\hline
+\end{longtable}
+\endgroup
+\end{landscape}
+
+
+% Source GP4 Skeleton block 258
+\clearpage
+\subsubsection{Defect Tracking Approach}\label{sec:defect-tracking-approach}
+Defects identified during testing, data migration, or pilot deployment are logged in Jira with severity classification, reproduction steps, WBS ID, and assigned owner.
+
+
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.17}
+\setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
+\captionof{table}{Defect severity and response requirements}\label{tab:source-258}
+\addtocounter{table}{-1}
+\begin{longtable}{|L{\dimexpr 0.150000\linewidth-2\tabcolsep-1.333333\arrayrulewidth\relax}|L{\dimexpr 0.320000\linewidth-2\tabcolsep-1.333333\arrayrulewidth\relax}|L{\dimexpr 0.530000\linewidth-2\tabcolsep-1.333333\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries Severity & \color{white}\bfseries Definition & \color{white}\bfseries Corrective Action /\allowbreak{} Response\\\hline
+\endfirsthead
+\multicolumn{3}{l}{\small\itshape Defect severity and response requirements (continued)}\\[4pt]
+\hline
+\rowcolor{MeridianPurple} \color{white}\bfseries Severity & \color{white}\bfseries Definition & \color{white}\bfseries Corrective Action /\allowbreak{} Response\\\hline
+\endhead
+\multicolumn{3}{r}{\footnotesize\itshape Continued on next page}\\
+\endfoot
+\endlastfoot
+\rowcolor{MeridianPale}
+Sev 1 : Critical & System down, authentication failure, data loss, HIPAA security breach, or total block of core certification workflow. & Immediate escalation and dedicated technical response, halt the affected deployment/\allowbreak{}release gate. Deploy and verify a fix within 8 elapsed hours of detection. Meridian IT coordinates vendor support, retained recovery evidence must also show no more than 24 hours of recorded activity lost.\\\hline
+Sev 2 : High & Core training or certification task cannot be completed and no reasonable workaround exists. & Acknowledge and assign within 4 working hours, target fix and retest within 2 working days, and always before UAT acceptance or the affected rollout approval. Escalate to the PM immediately if the gate is at risk.\\\hline
+\rowcolor{MeridianPale}
+Sev 3 : Medium & Core task can be completed using a documented workaround. & Assign within 1 working day. Plan a fix and retest within 10 working days or before the next affected wave, whichever is earlier. A documented workaround and sponsor-approved deferral are required if the target cannot be met. Retain the defect in Jira.\\\hline
+Sev 4 : Low & Minor text, formatting, cosmetic, or non-functional UI alignment issue. & Triage within 3 working days and schedule for the next agreed maintenance cycle. Record owner and disposition at handover. Scope enhancements may be assessed separately in the Future Feature Register. Defects remain traceable in Jira.\\\hline
+\end{longtable}
+\endgroup
+
+
+% Source GP4 Skeleton block 261
+\subsubsection{Corrective action process}\label{sec:corrective-action-process}
+When a quality metric misses its target or a defect is reported, the responsible owner records the evidence, affected WBS ID, severity, corrective action and due date in Jira. The Technical /\allowbreak{} Quality Lead coordinates cause analysis and retesting with the relevant delivery owner. Sev-1 incidents follow the immediate escalation and eight-elapsed-hour verified-fix rule. Release-blocking defects remain open until the required evidence is accepted.
+
+
+% Source GP4 Skeleton block 262
+The PM reports corrective-action status through Section 5.2. Actions that change scope, schedule, funding or resource commitments follow Section 1.11 before implementation. The assigned reviewer verifies the correction and retains the test result, decision and closure record with the deliverable evidence.
