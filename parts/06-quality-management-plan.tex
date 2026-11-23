@@ -140,159 +140,41 @@ The quality metrics, thresholds, evidence, timing and owners are defined below:
 
 
 \begingroup
-\fontsize{9.5}{11.5}\selectfont
-\setlength{\tabcolsep}{5pt}
-\renewcommand{\arraystretch}{1.12}
+\fontsize{9}{11}\selectfont
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.17}
 \setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
 \captionof{table}{Quality metrics, targets, timing and owners}\label{tab:source-254}
 \addtocounter{table}{-1}
-\begin{longtable}{@{}L{\linewidth}@{}}
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\begin{longtable}{|L{\dimexpr 0.160000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.250000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.230000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.230000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.130000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
-\end{tabular}\\
+\rowcolor{MeridianPurple} \color{white}\bfseries Metric & \color{white}\bfseries Target & \color{white}\bfseries How Measured & \color{white}\bfseries When & \color{white}\bfseries Owner\\\hline
 \endfirsthead
-\small\itshape Quality metrics, targets, timing and owners (continued)\\[4pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\multicolumn{5}{l}{\small\itshape Quality metrics, targets, timing and owners (continued)}\\[4pt]
 \hline
-\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
-\end{tabular}\\
+\rowcolor{MeridianPurple} \color{white}\bfseries Metric & \color{white}\bfseries Target & \color{white}\bfseries How Measured & \color{white}\bfseries When & \color{white}\bfseries Owner\\\hline
 \endhead
-\hfill\footnotesize\itshape Continued on next page\\
+\multicolumn{5}{r}{\footnotesize\itshape Continued on next page}\\
 \endfoot
 \endlastfoot
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Metric} & Training Material Conversion Rate\\\hline
-\textbf{Target} & At least 80\% converted by March 10, all approved in-scope outputs finalized by March 23 and available by May 6\\\hline
 \rowcolor{MeridianPale}
-\textbf{How Measured} & Converted modules divided by total identified suitable source materials\\\hline
-\textbf{When} & Conversion 4.2.1 by March 10, final approval 4.2.3 by March 23, publication/\allowbreak{}acceptance by May 6\\\hline
+Training Material Conversion Rate & At least 80\% converted by March 10, all approved in-scope outputs finalized by March 23 and available by May 6 & Converted modules divided by total identified suitable source materials & Conversion 4.2.1 by March 10, final approval 4.2.3 by March 23, publication/\allowbreak{}acceptance by May 6 & Training Lead\\\hline
+Initial HR Content Approval Rate & 85\% initial review approval & Approved modules divided by total modules submitted for HR/\allowbreak{}SME review & Initial review by March 17, revisions and final approval by March 23, before May 6 acceptance & Training /\allowbreak{} L\&D Lead\\\hline
 \rowcolor{MeridianPale}
-\textbf{Owner} & Training Lead\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Metric} & Initial HR Content Approval Rate\\\hline
-\textbf{Target} & 85\% initial review approval\\\hline
+Migrated Record Accuracy & At least 95\% initial record match, every discrepancy resolved and rechecked before batch acceptance & Compare all required fields per source record with the LMS, missing records fail. Reconcile counts and retain exception/\allowbreak{}correction evidence. & 5.3.1--5.3.3, before May 6, 2027, updated records checked before each wave under 8.1.3 & LMS Administrator /\allowbreak{} HRIS coordination, HR Records Lead, HR/\allowbreak{}Compliance acceptance\\\hline
+LMS Functional Test Pass Rate & 95\% overall pass, 100\% critical pass & Successfully executed test cases divided by total executed test cases in Jira & Pilot tests preparation/\allowbreak{}monitoring: May 7--11\newline Learner testing: May 12-20\newline Scheduled load test: May 12-17\newline Retest and acceptance before 6.3.2 approval by June 17 & Quality Lead\\\hline
 \rowcolor{MeridianPale}
-\textbf{How Measured} & Approved modules divided by total modules submitted for HR/\allowbreak{}SME review\\\hline
-\textbf{When} & Initial review by March 17, revisions and final approval by March 23, before May 6 acceptance\\\hline
+Compliance Reporting Accuracy & 100\% report agreement & Verification of LMS audit reports against validated source completion logs & Pilot evaluation phase & Compliance Officer \& LMS Admins\\\hline
+SSO Access \& Sign-in Performance & Authorized test accounts sign in and receive correct role access, at least 95\% of sign-ins finish in under 3.0 seconds & SSO/\allowbreak{}RBAC scripts and timed sign-in samples from valid credentials to authenticated session, retain results at 5,000-user load & 3.1.1 configuration, 6.1.2 access/\allowbreak{}security tests, 6.2.1 latency before 6.3.2 rollout approval & Vendor Configuration Lead, Meridian IT owner, Technical /\allowbreak{} Quality Lead\\\hline
 \rowcolor{MeridianPale}
-\textbf{Owner} & Training /\allowbreak{} L\&D Lead\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Metric} & Migrated Record Accuracy\\\hline
-\textbf{Target} & At least 95\% initial record match, every discrepancy resolved and rechecked before batch acceptance\\\hline
+System Availability (Uptime) & At least 99\% monthly availability with contract-defined maintenance exclusions & APM monthly eligible service time minus unplanned downtime, using agreed contractual exclusions, retain incident evidence & Monthly post-launch & IT Lead \& Vendor Cloud Support\\\hline
+Page Load Time /\allowbreak{} Latency (P95) & P95 page-load latency under 2.0 seconds at 5,000 concurrent users & Automated load testing tools measuring concurrency across facilities & Scheduled load test: May 12--17 under WBS 6.2.2, before pilot approval. Weekly staging/\allowbreak{}UAT observations are monitoring. Additional load-test cycles require an approved effort and schedule allowance. & Technical Lead\\\hline
 \rowcolor{MeridianPale}
-\textbf{How Measured} & Compare all required fields per source record with the LMS, missing records fail. Reconcile counts and retain exception/\allowbreak{}correction evidence.\\\hline
-\textbf{When} & 5.3.1--5.3.3, before May 6, 2027, updated records checked before each wave under 8.1.3\\\hline
+HR Administrative Time Reduction & 60--65\% reduction from baseline & HR Records Lead logs monthly hours for training assignments, certification tracking, reporting and renewal follow-up. Baseline B is average monthly hours in February--April 2027. Post-rollout P is average monthly hours in March--May 2028. Reduction = (B - P) /\allowbreak{} B \(\times\) 100. Use the same activity categories and record population or workload changes. & Assessment due June 9, 2028, six months after final-wave completion on December 9, 2027. & Project Manager assesses. HR Records Lead owns operational logs.\\\hline
+Concurrent Capacity & At least 5,000 concurrent users meeting sign-in, page-load and recording targets & Representative synthetic workload, signed load report, failures and retest results & 6.2.2 before 6.3.2 rollout approval, monitor under 8.2.1 & Selected-vendor Performance-Test Lead with Meridian IT\\\hline
 \rowcolor{MeridianPale}
-\textbf{Owner} & LMS Administrator /\allowbreak{} HRIS coordination, HR Records Lead, HR/\allowbreak{}Compliance acceptance\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Metric} & LMS Functional Test Pass Rate\\\hline
-\textbf{Target} & 95\% overall pass, 100\% critical pass\\\hline
-\rowcolor{MeridianPale}
-\textbf{How Measured} & Successfully executed test cases divided by total executed test cases in Jira\\\hline
-\textbf{When} & Pilot tests preparation/\allowbreak{}monitoring: May 7--11\newline Learner testing: May 12-20\newline Scheduled load test: May 12-17\newline Retest and acceptance before 6.3.2 approval by June 17\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Quality Lead\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Metric} & Compliance Reporting Accuracy\\\hline
-\textbf{Target} & 100\% report agreement\\\hline
-\rowcolor{MeridianPale}
-\textbf{How Measured} & Verification of LMS audit reports against validated source completion logs\\\hline
-\textbf{When} & Pilot evaluation phase\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Compliance Officer \& LMS Admins\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Metric} & SSO Access \& Sign-in Performance\\\hline
-\textbf{Target} & Authorized test accounts sign in and receive correct role access, at least 95\% of sign-ins finish in under 3.0 seconds\\\hline
-\rowcolor{MeridianPale}
-\textbf{How Measured} & SSO/\allowbreak{}RBAC scripts and timed sign-in samples from valid credentials to authenticated session, retain results at 5,000-user load\\\hline
-\textbf{When} & 3.1.1 configuration, 6.1.2 access/\allowbreak{}security tests, 6.2.1 latency before 6.3.2 rollout approval\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Vendor Configuration Lead, Meridian IT owner, Technical /\allowbreak{} Quality Lead\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Metric} & System Availability (Uptime)\\\hline
-\textbf{Target} & At least 99\% monthly availability with contract-defined maintenance exclusions\\\hline
-\rowcolor{MeridianPale}
-\textbf{How Measured} & APM monthly eligible service time minus unplanned downtime, using agreed contractual exclusions, retain incident evidence\\\hline
-\textbf{When} & Monthly post-launch\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & IT Lead \& Vendor Cloud Support\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Metric} & Page Load Time /\allowbreak{} Latency (P95)\\\hline
-\textbf{Target} & P95 page-load latency under 2.0 seconds at 5,000 concurrent users\\\hline
-\rowcolor{MeridianPale}
-\textbf{How Measured} & Automated load testing tools measuring concurrency across facilities\\\hline
-\textbf{When} & Scheduled load test: May 12--17 under WBS 6.2.2, before pilot approval. Weekly staging/\allowbreak{}UAT observations are monitoring. Additional load-test cycles require an approved effort and schedule allowance.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Technical Lead\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Metric} & HR Administrative Time Reduction\\\hline
-\textbf{Target} & 60--65\% reduction from baseline\\\hline
-\rowcolor{MeridianPale}
-\textbf{How Measured} & HR Records Lead logs monthly hours for training assignments, certification tracking, reporting and renewal follow-up. Baseline B is average monthly hours in February--April 2027. Post-rollout P is average monthly hours in March--May 2028. Reduction = (B - P) /\allowbreak{} B \(\times\) 100. Use the same activity categories and record population or workload changes.\\\hline
-\textbf{When} & Assessment due June 9, 2028, six months after final-wave completion on December 9, 2027.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Project Manager assesses. HR Records Lead owns operational logs.\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Metric} & Concurrent Capacity\\\hline
-\textbf{Target} & At least 5,000 concurrent users meeting sign-in, page-load and recording targets\\\hline
-\rowcolor{MeridianPale}
-\textbf{How Measured} & Representative synthetic workload, signed load report, failures and retest results\\\hline
-\textbf{When} & 6.2.2 before 6.3.2 rollout approval, monitor under 8.2.1\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Selected-vendor Performance-Test Lead with Meridian IT\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Metric} & Completion Recording Delay\\\hline
-\textbf{Target} & Training completion visible in employee record and standard reports within 5 minutes\\\hline
-\rowcolor{MeridianPale}
-\textbf{How Measured} & Compare known completion timestamps to record/\allowbreak{}report visibility, retain sample and exception evidence\\\hline
-\textbf{When} & 6.2.3 during pilot, resolved before 6.3.2, monitor under 8.2.1\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & LMS Administrator with HR/\allowbreak{}Compliance verification\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Metric} & Recovery \& Maximum Data Loss\\\hline
-\textbf{Target} & Restore service within 8 hours, no more than 24 hours of recorded activity lost\\\hline
-\rowcolor{MeridianPale}
-\textbf{How Measured} & Vendor recovery-test report, backup evidence to designated OneDrive directory, and verified restoration/\allowbreak{}loss timestamps, gaps resolved before approval\\\hline
-\textbf{When} & 6.2.5 before 6.3.2 rollout approval, incidents tracked under 8.2.2\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Meridian IT Lead with vendor recovery support\\\hline
-\end{tabular}\\[6pt]
+Completion Recording Delay & Training completion visible in employee record and standard reports within 5 minutes & Compare known completion timestamps to record/\allowbreak{}report visibility, retain sample and exception evidence & 6.2.3 during pilot, resolved before 6.3.2, monitor under 8.2.1 & LMS Administrator with HR/\allowbreak{}Compliance verification\\\hline
+Recovery \& Maximum Data Loss & Restore service within 8 hours, no more than 24 hours of recorded activity lost & Vendor recovery-test report, backup evidence to designated OneDrive directory, and verified restoration/\allowbreak{}loss timestamps, gaps resolved before approval & 6.2.5 before 6.3.2 rollout approval, incidents tracked under 8.2.2 & Meridian IT Lead with vendor recovery support\\\hline
 \end{longtable}
 \endgroup
 

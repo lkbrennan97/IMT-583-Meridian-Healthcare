@@ -27,84 +27,32 @@ The following thresholds are proposed planning criteria for Meridian, not values
 
 % Source GP4 Skeleton block 153
 \clearpage
-
 \begingroup
-\fontsize{9.5}{11.5}\selectfont
-\setlength{\tabcolsep}{5pt}
-\renewcommand{\arraystretch}{1.12}
+\fontsize{9}{11}\selectfont
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.17}
 \setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
 \captionof{table}{Risk probability and impact scales}\label{tab:source-153}
 \addtocounter{table}{-1}
-\begin{longtable}{@{}L{\linewidth}@{}}
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\begin{longtable}{|L{\dimexpr 0.060000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.140000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.220000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.230000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|L{\dimexpr 0.350000\linewidth-2\tabcolsep-1.200000\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
-\end{tabular}\\
+\rowcolor{MeridianPurple} \color{white}\bfseries Score & \color{white}\bfseries Probability & \color{white}\bfseries Impact: Schedule & \color{white}\bfseries Impact: Effort /\allowbreak{} Cost & \color{white}\bfseries Impact: Quality /\allowbreak{} Compliance\\\hline
 \endfirsthead
-\small\itshape Risk probability and impact scales (continued)\\[4pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\multicolumn{5}{l}{\small\itshape Risk probability and impact scales (continued)}\\[4pt]
 \hline
-\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
-\end{tabular}\\
+\rowcolor{MeridianPurple} \color{white}\bfseries Score & \color{white}\bfseries Probability & \color{white}\bfseries Impact: Schedule & \color{white}\bfseries Impact: Effort /\allowbreak{} Cost & \color{white}\bfseries Impact: Quality /\allowbreak{} Compliance\\\hline
 \endhead
-\hfill\footnotesize\itshape Continued on next page\\
+\multicolumn{5}{r}{\footnotesize\itshape Continued on next page}\\
 \endfoot
 \endlastfoot
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Score} & 1\\\hline
-\textbf{Probability} & Rare, under 10\%\\\hline
 \rowcolor{MeridianPale}
-\textbf{Impact: Schedule} & No milestone effect\\\hline
-\textbf{Impact: Effort /\allowbreak{} Cost} & Under 8 additional hours\\\hline
+1 & Rare, under 10\% & No milestone effect & Under 8 additional hours & No measurable effect\\\hline
+2 & Unlikely, 10--29\% & Less than 2 working days & 8--24 additional hours & Minor correction without affecting acceptance\\\hline
 \rowcolor{MeridianPale}
-\textbf{Impact: Quality /\allowbreak{} Compliance} & No measurable effect\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Score} & 2\\\hline
-\textbf{Probability} & Unlikely, 10--29\%\\\hline
+3 & Possible, 30--49\% & 2--3 working days & 25--60 additional hours & Rework needed before acceptance\\\hline
+4 & Likely, 50--69\% & 4--5 working days or a milestone delay & 61--120 additional hours & Major deliverable or deployment-readiness impact\\\hline
 \rowcolor{MeridianPale}
-\textbf{Impact: Schedule} & Less than 2 working days\\\hline
-\textbf{Impact: Effort /\allowbreak{} Cost} & 8--24 additional hours\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact: Quality /\allowbreak{} Compliance} & Minor correction without affecting acceptance\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Score} & 3\\\hline
-\textbf{Probability} & Possible, 30--49\%\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact: Schedule} & 2--3 working days\\\hline
-\textbf{Impact: Effort /\allowbreak{} Cost} & 25--60 additional hours\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact: Quality /\allowbreak{} Compliance} & Rework needed before acceptance\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Score} & 4\\\hline
-\textbf{Probability} & Likely, 50--69\%\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact: Schedule} & 4--5 working days or a milestone delay\\\hline
-\textbf{Impact: Effort /\allowbreak{} Cost} & 61--120 additional hours\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact: Quality /\allowbreak{} Compliance} & Major deliverable or deployment-readiness impact\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Score} & 5\\\hline
-\textbf{Probability} & Very likely, 70\% or greater\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact: Schedule} & More than 5 working days or project completion threatened\\\hline
-\textbf{Impact: Effort /\allowbreak{} Cost} & Over 120 additional hours or unapproved additional funding\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact: Quality /\allowbreak{} Compliance} & Certification integrity, security, compliance, or mandatory acceptance requirement compromised\\\hline
-\end{tabular}\\[6pt]
+5 & Very likely, 70\% or greater & More than 5 working days or project completion threatened & Over 120 additional hours or unapproved additional funding & Certification integrity, security, compliance, or mandatory acceptance requirement compromised\\\hline
 \end{longtable}
 \endgroup
 
@@ -196,297 +144,46 @@ Risk response requires changes to approved scope, cost, or schedule baselines & 
 \subsection{Risk register}\label{sec:4.2}
 
 \begingroup
-\fontsize{9.5}{11.5}\selectfont
-\setlength{\tabcolsep}{5pt}
-\renewcommand{\arraystretch}{1.12}
+\fontsize{8.3}{10.4}\selectfont
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.17}
 \setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
 \captionof{table}{Initial risk register}\label{tab:source-177}
 \addtocounter{table}{-1}
-\begin{longtable}{@{}L{\linewidth}@{}}
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\begin{longtable}{|L{\dimexpr 0.045000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.190000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.100000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.040000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.040000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.050000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.075000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.195000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.105000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|L{\dimexpr 0.160000\linewidth-2\tabcolsep-1.100000\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
-\end{tabular}\\
+\rowcolor{MeridianPurple} \color{white}\bfseries Risk ID & \color{white}\bfseries Risk description & \color{white}\bfseries Category & \color{white}\bfseries P\newline 1--5 & \color{white}\bfseries I\newline 1--5 & \color{white}\bfseries Score\newline P \(\times\) I & \color{white}\bfseries Response\newline strategy & \color{white}\bfseries Specific response action & \color{white}\bfseries Owner & \color{white}\bfseries Trigger conditions\\\hline
 \endfirsthead
-\small\itshape Initial risk register (continued)\\[4pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\multicolumn{10}{l}{\small\itshape Initial risk register (continued)}\\[4pt]
 \hline
-\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
-\end{tabular}\\
+\rowcolor{MeridianPurple} \color{white}\bfseries Risk ID & \color{white}\bfseries Risk description & \color{white}\bfseries Category & \color{white}\bfseries P\newline 1--5 & \color{white}\bfseries I\newline 1--5 & \color{white}\bfseries Score\newline P \(\times\) I & \color{white}\bfseries Response\newline strategy & \color{white}\bfseries Specific response action & \color{white}\bfseries Owner & \color{white}\bfseries Trigger conditions\\\hline
 \endhead
-\hfill\footnotesize\itshape Continued on next page\\
+\multicolumn{10}{r}{\footnotesize\itshape Continued on next page}\\
 \endfoot
 \endlastfoot
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R01\\\hline
-\textbf{Risk Description} & Incomplete or inaccurate employee certification records cause migration errors or failed acceptance.\\\hline
 \rowcolor{MeridianPale}
-\textbf{Category} & Technical\\\hline
-\textbf{Probability (1--5)} & 4\\\hline
+R01 & Incomplete or inaccurate employee certification records cause migration errors or failed acceptance. & Technical & 4 & 5 & 20 & Mitigate & Clean and validate source records, trial-import samples, reconcile batches, and resolve exceptions before migration acceptance. WBS 5.1.2--5.3.3. & LMS Administrator /\allowbreak{} Technical Lead & Initial record match below 95\%, unresolved discrepancies\\\hline
+R02 & Converted training materials fail accessibility, functionality, or HR/\allowbreak{}trainer approval requirements. & Technical & 3 & 5 & 15 & Mitigate & Approve sample conversions, check accessibility and content, correct defects, and obtain HR/\allowbreak{}trainer sign-off. WBS 4.1.2--4.2.3. & Training Lead & Rejected materials, unresolved content defects\\\hline
 \rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 5\\\hline
-\textbf{Risk Score (P x I)} & 20\\\hline
+R03 & Incorrect role or department mappings assign employees the wrong mandatory training. & Technical & 3 & 5 & 15 & Mitigate & Validate role/\allowbreak{}department rules with HR and test representative assignments before approval. WBS 3.1.4, 6.1.2. & Vendor Configuration Lead & Incorrect mandatory assignments during testing\\\hline
+R04 & Clinical workloads or insufficient hospital devices delay training and departmental deployment. & Organizational & 4 & 4 & 16 & Mitigate & Confirm devices, scheduled training time, departmental contacts, and support coverage before each wave. WBS 8.1.1--8.1.3. & Project Manager /\allowbreak{} Training Lead & Missing device or staffing commitments, delayed training\\\hline
 \rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Clean and validate source records, trial-import samples, reconcile batches, and resolve exceptions before migration acceptance. WBS 5.1.2--5.3.3.\\\hline
+R05 & Insufficient pilot participation or unavailable HR/\allowbreak{}Finance reviewers prevent representative testing. & Organizational & 3 & 4 & 12 & Mitigate & Confirm pilot roster and representative scenarios early, schedule testing and secure reviewer availability. WBS 6.1.1--6.1.2. & Project Manager & Incomplete pilot roster, unavailable participants\\\hline
+R06 & Vendor licensing, configuration, or support costs exceed approved funding. & External & 3 & 4 & 12 & Mitigate & Compare total vendor costs, secure CHRO/\allowbreak{}CFO approval, and verify contract pricing before commitment. WBS 2.2.1--2.2.2. & Project Manager & Costs exceed approved funding, unapproved charges\\\hline
 \rowcolor{MeridianPale}
-\textbf{Owner} & LMS Administrator /\allowbreak{} Technical Lead\\\hline
-\textbf{Trigger Conditions} & Initial record match below 95\%, unresolved discrepancies\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R02\\\hline
-\textbf{Risk Description} & Converted training materials fail accessibility, functionality, or HR/\allowbreak{}trainer approval requirements.\\\hline
+R07 & Vendor configuration delays prevent completion of migration readiness activities. & External & 3 & 4 & 12 & Mitigate & Establish contractual deliverables, monitor configuration progress, and resolve blockers before migration readiness approval. WBS 2.2.2, 3.3.2. & Vendor Configuration Lead & Missed configuration milestones, readiness not approved\\\hline
+R08 & Unauthorized access or insufficient audit logging compromises employee training records. & Technical & 2 & 5 & 10 & Mitigate & Review security controls, validate role permissions, and verify audit-log evidence before acceptance. WBS 2.1.2, 3.1.1--3.1.2. & Meridian IT Lead & Unauthorized access, missing or incomplete audit logs\\\hline
 \rowcolor{MeridianPale}
-\textbf{Category} & Technical\\\hline
-\textbf{Probability (1--5)} & 3\\\hline
+R09 & LMS certification reports or completion updates fail accuracy or five-minute recording requirements. & Technical & 3 & 5 & 15 & Mitigate & Test certification cases, reconcile report fields, and verify completion updates within five minutes. WBS 3.2.1, 6.2.3. & LMS Administrator & Incorrect reports, updates exceed five minutes\\\hline
+R10 & Departments continue using paper logs without an approved transition and renewal follow-up process. & Organizational & 3 & 4 & 12 & Mitigate & Define paper-log cutover, assign report-review owners, and approve department readiness before retiring paper workflows. WBS 7.2.1, 8.1.3. & HR Operations Lead & Unapproved paper-log process, missing follow-up owner\\\hline
 \rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 5\\\hline
-\textbf{Risk Score (P x I)} & 15\\\hline
+R11 & Unapproved enhancements expand project scope and disrupt approved deliverables. & Project Management & 3 & 4 & 12 & Avoid & Apply approved scope boundaries and record enhancement requests in the deferred-feature register. WBS 1.2.2, 9.1.1--9.2.2. & Project Manager & Requests for excluded or unapproved functionality\\\hline
+R12 & Delays in pilot remediation or authorization postpone deployment waves and project closure. & Project Management & 3 & 5 & 15 & Mitigate & Track pilot defects, prioritize retesting, obtain rollout authorization, and monitor deployment dependencies. WBS 6.3.1--6.3.2, 8.1.1. & Project Manager /\allowbreak{} Technical Lead & Unresolved critical defects, delayed CHRO/\allowbreak{}CFO approval\\\hline
 \rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Approve sample conversions, check accessibility and content, correct defects, and obtain HR/\allowbreak{}trainer sign-off. WBS 4.1.2--4.2.3.\\\hline
+R13 & LMS performance fails the SSO target of at least 95\% of sign-ins in under 3.0 seconds or the 5,000-concurrent-user requirement. & Technical & 3 & 4 & 12 & Mitigate & Conduct sign-in and concurrency testing, investigate failures, and retest after remediation. WBS 6.2.1--6.2.2. & Meridian IT Lead /\allowbreak{} Vendor Performance-Test Lead & Sign-in target missed, 5,000-user load test fails\\\hline
+R14 & Vendor availability or recovery capabilities fail the required service targets. & External & 2 & 5 & 10 & Mitigate & Review vendor SLA/\allowbreak{}recovery evidence, monitor availability, and escalate gaps before rollout. WBS 2.1.3, 6.2.4--6.2.5. & Meridian IT Lead & Availability below 99\%, recovery evidence fails targets\\\hline
 \rowcolor{MeridianPale}
-\textbf{Owner} & Training Lead\\\hline
-\textbf{Trigger Conditions} & Rejected materials, unresolved content defects\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R03\\\hline
-\textbf{Risk Description} & Incorrect role or department mappings assign employees the wrong mandatory training.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Category} & Technical\\\hline
-\textbf{Probability (1--5)} & 3\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 5\\\hline
-\textbf{Risk Score (P x I)} & 15\\\hline
-\rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Validate role/\allowbreak{}department rules with HR and test representative assignments before approval. WBS 3.1.4, 6.1.2.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Vendor Configuration Lead\\\hline
-\textbf{Trigger Conditions} & Incorrect mandatory assignments during testing\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R04\\\hline
-\textbf{Risk Description} & Clinical workloads or insufficient hospital devices delay training and departmental deployment.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Category} & Organizational\\\hline
-\textbf{Probability (1--5)} & 4\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 4\\\hline
-\textbf{Risk Score (P x I)} & 16\\\hline
-\rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Confirm devices, scheduled training time, departmental contacts, and support coverage before each wave. WBS 8.1.1--8.1.3.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Project Manager /\allowbreak{} Training Lead\\\hline
-\textbf{Trigger Conditions} & Missing device or staffing commitments, delayed training\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R05\\\hline
-\textbf{Risk Description} & Insufficient pilot participation or unavailable HR/\allowbreak{}Finance reviewers prevent representative testing.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Category} & Organizational\\\hline
-\textbf{Probability (1--5)} & 3\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 4\\\hline
-\textbf{Risk Score (P x I)} & 12\\\hline
-\rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Confirm pilot roster and representative scenarios early, schedule testing and secure reviewer availability. WBS 6.1.1--6.1.2.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Project Manager\\\hline
-\textbf{Trigger Conditions} & Incomplete pilot roster, unavailable participants\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R06\\\hline
-\textbf{Risk Description} & Vendor licensing, configuration, or support costs exceed approved funding.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Category} & External\\\hline
-\textbf{Probability (1--5)} & 3\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 4\\\hline
-\textbf{Risk Score (P x I)} & 12\\\hline
-\rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Compare total vendor costs, secure CHRO/\allowbreak{}CFO approval, and verify contract pricing before commitment. WBS 2.2.1--2.2.2.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Project Manager\\\hline
-\textbf{Trigger Conditions} & Costs exceed approved funding, unapproved charges\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R07\\\hline
-\textbf{Risk Description} & Vendor configuration delays prevent completion of migration readiness activities.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Category} & External\\\hline
-\textbf{Probability (1--5)} & 3\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 4\\\hline
-\textbf{Risk Score (P x I)} & 12\\\hline
-\rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Establish contractual deliverables, monitor configuration progress, and resolve blockers before migration readiness approval. WBS 2.2.2, 3.3.2.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Vendor Configuration Lead\\\hline
-\textbf{Trigger Conditions} & Missed configuration milestones, readiness not approved\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R08\\\hline
-\textbf{Risk Description} & Unauthorized access or insufficient audit logging compromises employee training records.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Category} & Technical\\\hline
-\textbf{Probability (1--5)} & 2\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 5\\\hline
-\textbf{Risk Score (P x I)} & 10\\\hline
-\rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Review security controls, validate role permissions, and verify audit-log evidence before acceptance. WBS 2.1.2, 3.1.1--3.1.2.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Meridian IT Lead\\\hline
-\textbf{Trigger Conditions} & Unauthorized access, missing or incomplete audit logs\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R09\\\hline
-\textbf{Risk Description} & LMS certification reports or completion updates fail accuracy or five-minute recording requirements.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Category} & Technical\\\hline
-\textbf{Probability (1--5)} & 3\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 5\\\hline
-\textbf{Risk Score (P x I)} & 15\\\hline
-\rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Test certification cases, reconcile report fields, and verify completion updates within five minutes. WBS 3.2.1, 6.2.3.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & LMS Administrator\\\hline
-\textbf{Trigger Conditions} & Incorrect reports, updates exceed five minutes\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R10\\\hline
-\textbf{Risk Description} & Departments continue using paper logs without an approved transition and renewal follow-up process.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Category} & Organizational\\\hline
-\textbf{Probability (1--5)} & 3\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 4\\\hline
-\textbf{Risk Score (P x I)} & 12\\\hline
-\rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Define paper-log cutover, assign report-review owners, and approve department readiness before retiring paper workflows. WBS 7.2.1, 8.1.3.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & HR Operations Lead\\\hline
-\textbf{Trigger Conditions} & Unapproved paper-log process, missing follow-up owner\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R11\\\hline
-\textbf{Risk Description} & Unapproved enhancements expand project scope and disrupt approved deliverables.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Category} & Project Management\\\hline
-\textbf{Probability (1--5)} & 3\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 4\\\hline
-\textbf{Risk Score (P x I)} & 12\\\hline
-\rowcolor{MeridianPale}
-\textbf{Response Strategy} & Avoid\\\hline
-\textbf{Specific Response Action} & Apply approved scope boundaries and record enhancement requests in the deferred-feature register. WBS 1.2.2, 9.1.1--9.2.2.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Project Manager\\\hline
-\textbf{Trigger Conditions} & Requests for excluded or unapproved functionality\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R12\\\hline
-\textbf{Risk Description} & Delays in pilot remediation or authorization postpone deployment waves and project closure.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Category} & Project Management\\\hline
-\textbf{Probability (1--5)} & 3\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 5\\\hline
-\textbf{Risk Score (P x I)} & 15\\\hline
-\rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Track pilot defects, prioritize retesting, obtain rollout authorization, and monitor deployment dependencies. WBS 6.3.1--6.3.2, 8.1.1.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Project Manager /\allowbreak{} Technical Lead\\\hline
-\textbf{Trigger Conditions} & Unresolved critical defects, delayed CHRO/\allowbreak{}CFO approval\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R13\\\hline
-\textbf{Risk Description} & LMS performance fails the SSO target of at least 95\% of sign-ins in under 3.0 seconds or the 5,000-concurrent-user requirement.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Category} & Technical\\\hline
-\textbf{Probability (1--5)} & 3\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 4\\\hline
-\textbf{Risk Score (P x I)} & 12\\\hline
-\rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Conduct sign-in and concurrency testing, investigate failures, and retest after remediation. WBS 6.2.1--6.2.2.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Meridian IT Lead /\allowbreak{} Vendor Performance-Test Lead\\\hline
-\textbf{Trigger Conditions} & Sign-in target missed, 5,000-user load test fails\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R14\\\hline
-\textbf{Risk Description} & Vendor availability or recovery capabilities fail the required service targets.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Category} & External\\\hline
-\textbf{Probability (1--5)} & 2\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 5\\\hline
-\textbf{Risk Score (P x I)} & 10\\\hline
-\rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Review vendor SLA/\allowbreak{}recovery evidence, monitor availability, and escalate gaps before rollout. WBS 2.1.3, 6.2.4--6.2.5.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Meridian IT Lead\\\hline
-\textbf{Trigger Conditions} & Availability below 99\%, recovery evidence fails targets\\\hline
-\end{tabular}\\[6pt]
-\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
-\hline
-\rowcolor{MeridianLavender}
-\textbf{Risk ID} & R15\\\hline
-\textbf{Risk Description} & Inadequate onboarding guides or training support prevent users from completing required LMS tasks.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Category} & Organizational\\\hline
-\textbf{Probability (1--5)} & 3\\\hline
-\rowcolor{MeridianPale}
-\textbf{Impact (1--5)} & 4\\\hline
-\textbf{Risk Score (P x I)} & 12\\\hline
-\rowcolor{MeridianPale}
-\textbf{Response Strategy} & Mitigate\\\hline
-\textbf{Specific Response Action} & Validate role-specific guides with users, prepare support materials, and confirm competence during training. WBS 7.1.1--7.1.3, 8.1.2.\\\hline
-\rowcolor{MeridianPale}
-\textbf{Owner} & Training Lead\\\hline
-\textbf{Trigger Conditions} & Users cannot complete tasks independently, training gaps\\\hline
-\end{tabular}\\[6pt]
+R15 & Inadequate onboarding guides or training support prevent users from completing required LMS tasks. & Organizational & 3 & 4 & 12 & Mitigate & Validate role-specific guides with users, prepare support materials, and confirm competence during training. WBS 7.1.1--7.1.3, 8.1.2. & Training Lead & Users cannot complete tasks independently, training gaps\\\hline
 \end{longtable}
 \endgroup
 
@@ -497,7 +194,7 @@ Risk response requires changes to approved scope, cost, or schedule baselines & 
 
 \begin{figure}[H]
 \centering
-\includegraphics[page=1,width=\linewidth,height=7.2in,keepaspectratio]{figures/meridian_risk_matrix.pdf}
+\includegraphics[page=1,width=\linewidth,height=4.95in,keepaspectratio]{figures/meridian_risk_matrix.pdf}
 \caption{Risk heat map: 15 initial risk ratings, with 6 High, 9 Medium and 0 Low.}\label{fig:risk-matrix}
 \end{figure}
 \clearpage

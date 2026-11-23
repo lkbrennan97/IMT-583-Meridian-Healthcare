@@ -5,10 +5,11 @@ all WBS, Gantt and risk figures are bundled in `figures/`. The report contains t
 complete 54-package WBS dictionary as native LaTeX tables, with no external links
 needed to read it.
 
-All report pages use portrait orientation. Wide source grids are presented as
-field/detail tables, retaining all fields and keeping each record together.
-WBS and Gantt figures are embedded on portrait pages; vector chart details remain
-sharp when zoomed.
+All report pages use landscape orientation. Tables use full column grids with
+repeated headers, following the exemplar. The WBS dictionary retains all eight
+Google Sheet fields as separate columns and all 54 complete work-package rows.
+The WBS hierarchy is laid out across five vector landscape sheets. Vector chart
+details remain sharp when zoomed.
 
 Compile from this directory with either:
 

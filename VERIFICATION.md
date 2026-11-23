@@ -4,12 +4,13 @@ Source: the GP4 Skeleton main tab and the native WBS Dictionary and Staffing & C
 
 - Six report parts; 51 source headings verified.
 - 103 unchanged narrative paragraphs checked against the source text.
-- 1332 nonempty table cells checked against source snapshots.
+- 1322 nonempty table cells checked against source snapshots.
 - 54 complete WBS work packages; 1,756 quantified person-hours.
-- 28 tables and 10 embedded figures. Tables and figures start on fresh pages; every page is portrait. Wide grids are reflowed into field/detail tables with complete records kept together.
-- WBS sheets 1–2, Gantt overview, all six Gantt detail panels, and the risk matrix are embedded.
+- WBS columns verified individually: WBS ID and work package; Description of work; Responsible role; Effort (person-hours); Duration (working days); Dependencies; Required resources; Acceptance criteria.
+- 28 tables and 13 embedded figures. Tables and figures start on fresh pages; every report page is landscape. Tables use column grids with repeated headers, following the exemplar.
+- The WBS hierarchy is reflowed into five vector landscape sheets, retaining nine deliverables, 23 components and all 54 work packages. The Gantt overview, all six Gantt detail panels, and the risk matrix are embedded.
 - No external URLs or unresolved placeholders in the six LaTeX parts.
-- Navigation-only source links/captions became internal references and embedded artifacts. Portrait field/detail tables retain all original field names and values.
+- Navigation-only source links/captions became internal references and embedded artifacts. WBS dictionary tables retain all eight original Google Sheet fields as separate columns, with all 54 complete work-package rows.
 - The two review/history tabs are excluded in accordance with the source’s explicit conversion instructions. Their current planning limits remain in the main plan.
 
 ## Exemplar section coverage
@@ -54,11 +55,11 @@ The schedule keeps the current skeleton’s section numbering: Section 3.6 expla
 
 PASS: no omitted source content detected.
 
-## Portrait layout verification
+## Landscape layout verification
 
-- Compiled successfully with Tectonic: 75 pages, all US Letter portrait (612 × 792 points), with no rotated pages.
-- No overfull boxes, unresolved references, duplicate labels, or duplicate PDF destinations.
-- Rendered and visually checked every page; inspected the WBS and risk records at full size.
-- No empty pages or text outside page boundaries.
-- Complete field/detail records remain together on one page; table headers repeat on continuation pages.
+- Compiled successfully with Tectonic: 68 pages, all US Letter landscape (792 × 612 points), with no rotated or portrait pages.
+- All 54 dictionary rows have exactly eight columns; each cell matches the corresponding Google Sheet field value.
+- Vector WBS sheets retain nine deliverables, 23 components, and all 54 package IDs, names and effort estimates.
+- Rendered and visually reviewed all pages, including enlarged dictionary and hierarchy samples.
+- No overfull boxes, unresolved references, duplicate destinations, empty pages, or text outside page boundaries.
 - AI disclosure remains pending and has not been added.

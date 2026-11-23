@@ -6,7 +6,7 @@
 \documentclass[11pt,letterpaper]{article}
 
 % ---------- Page geometry and typography ----------
-\usepackage[letterpaper,margin=0.78in,headheight=16pt,headsep=0.22in,footskip=0.38in]{geometry}
+\usepackage[letterpaper,landscape,margin=0.78in,headheight=16pt,headsep=0.22in,footskip=0.38in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{microtype}
@@ -112,14 +112,16 @@
 % COVER PAGE
 % ============================================================
 \thispagestyle{empty}
-\vspace*{1.05in}
+\vspace*{0.30in}
 
 {\large\color{MeridianGray}Meridian Health\par}
-\vspace{0.18in}
+\vspace{0.30in}
+\begin{minipage}[t]{0.42\textwidth}
+\RaggedRight
 {\Huge\bfseries\color{MeridianPurple}Learning Management System\par}
 \vspace{0.12in}
 {\LARGE Comprehensive Project Plan\par}
-\vspace{0.55in}
+\vspace{0.32in}
 
 {\large\bfseries\color{MeridianPurple}IMT 583 GP4\par}
 \vspace{0.20in}
@@ -129,8 +131,10 @@ Lincoln Brennan; Kyle Chen; Kshitij Dani; Sekoya Kinsey
 \vspace{0.20in}
 \textbf{Prepared November 22, 2026}\\[6pt]
 Planning version 1.0, proposed baseline; subject to required approvals.
-
-\vspace{0.22in}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.53\textwidth}
+\small
+\RaggedRight
 \textbf{Project sponsor:} Chief Human Resources Officer (CHRO)\\[6pt]
 \textbf{Project management:} BCDK consulting team for Meridian Health\\[6pt]
 \textbf{Planning period:} January 1, 2027--January 6, 2028\\
@@ -143,6 +147,7 @@ visible for variance reporting. Revised completion-baseline approval is pending.
 Build vs. Buy Analysis; GP3 Kickoff Presentation.\\[6pt]
 The full WBS dictionary, WBS sheets, Gantt overview and six detail panels,
 and risk matrix are included in this report.
+\end{minipage}
 
 \vfill
 \begin{center}
@@ -155,8 +160,18 @@ and risk matrix are included in this report.
 % ============================================================
 \pagenumbering{arabic}
 \setcounter{page}{1}
+\begingroup
+\small
+\setcounter{tocdepth}{2}
+\makeatletter
+\let\meridiansectionentry\l@section
+\renewcommand{\l@section}[2]{\Needspace{4\baselineskip}\meridiansectionentry{#1}{#2}}
+\makeatother
+\twocolumn
 \tableofcontents
 \clearpage
+\onecolumn
+\endgroup
 
 % Assignment parts in the exemplar's order.
 \input{parts/01-detailed-scope-statement}
