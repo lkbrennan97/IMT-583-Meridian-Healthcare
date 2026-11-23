@@ -4,12 +4,12 @@ Source: the GP4 Skeleton main tab and the native WBS Dictionary and Staffing & C
 
 - Six report parts; 51 source headings verified.
 - 103 unchanged narrative paragraphs checked against the source text.
-- 1314 nonempty table cells checked against source snapshots.
+- 1332 nonempty table cells checked against source snapshots.
 - 54 complete WBS work packages; 1,756 quantified person-hours.
-- 28 tables and 10 embedded figures. Tables and figures start on fresh pages; wide tables use landscape pages.
+- 28 tables and 10 embedded figures. Tables and figures start on fresh pages; every page is portrait. Wide grids are reflowed into field/detail tables with complete records kept together.
 - WBS sheets 1–2, Gantt overview, all six Gantt detail panels, and the risk matrix are embedded.
 - No external URLs or unresolved placeholders in the six LaTeX parts.
-- Navigation-only source links/captions became internal references and embedded artifacts. Compact table headings retain their original meanings.
+- Navigation-only source links/captions became internal references and embedded artifacts. Portrait field/detail tables retain all original field names and values.
 - The two review/history tabs are excluded in accordance with the source’s explicit conversion instructions. Their current planning limits remain in the main plan.
 
 ## Exemplar section coverage
@@ -53,3 +53,12 @@ The schedule keeps the current skeleton’s section numbering: Section 3.6 expla
 ## Result
 
 PASS: no omitted source content detected.
+
+## Portrait layout verification
+
+- Compiled successfully with Tectonic: 75 pages, all US Letter portrait (612 × 792 points), with no rotated pages.
+- No overfull boxes, unresolved references, duplicate labels, or duplicate PDF destinations.
+- Rendered and visually checked every page; inspected the WBS and risk records at full size.
+- No empty pages or text outside page boundaries.
+- Complete field/detail records remain together on one page; table headers repeat on continuation pages.
+- AI disclosure remains pending and has not been added.

@@ -8,7 +8,7 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[page=1,width=\linewidth,height=7.8in,keepaspectratio]{figures/meridian_wbs_1.png}
+\includegraphics[page=1,width=\linewidth,height=7.2in,keepaspectratio]{figures/meridian_wbs_1.png}
 \caption{Work breakdown structure for the Meridian Health LMS (sheet 1 of 2).}\label{fig:wbs}
 \end{figure}
 \clearpage
@@ -39,302 +39,1054 @@ The complete WBS dictionary is reproduced in the tables below.
 The source project-control workbook holds the 54-package WBS Dictionary plus editable Schedule, Dependencies, Resource Plan, Daily Demand, Risk Register and Risk Matrix tabs. This skeleton is the source of truth: changes are agreed here first and then synchronized to the workbook and exported visuals. WBS 6.2.1 uses at least 95\% of SSO sign-ins in under 3.0 seconds. 2.1.3 and 6.2.4 use 99\% monthly availability. 5.3.1 uses 95\% initial record match with all discrepancies resolved before acceptance. The complete package definitions are reproduced below.
 
 \clearpage
-\begin{landscape}
+
 \begingroup
-\fontsize{8.3}{10.4}\selectfont
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.17}
+\fontsize{9.5}{11.5}\selectfont
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
 \setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
 \captionof{table}{WBS dictionary: deliverable 1.0}\label{tab:wbs-1}
 \addtocounter{table}{-1}
-\begin{longtable}{|L{\dimexpr 0.160000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.200000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.130000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.055000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.070000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.120000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.115000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.150000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|}
+\begin{longtable}{@{}L{\linewidth}@{}}
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endfirsthead
-\multicolumn{8}{l}{\small\itshape WBS dictionary: deliverable 1.0 (continued)}\\[4pt]
+\small\itshape WBS dictionary: deliverable 1.0 (continued)\\[4pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endhead
-\multicolumn{8}{r}{\footnotesize\itshape Continued on next page}\\
+\hfill\footnotesize\itshape Continued on next page\\
 \endfoot
 \endlastfoot
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 1.1.1\newline Confirm stakeholder requirements and budget constraints\\\hline
+\textbf{Description of work} & Gather HR, IT, Compliance and Finance requirements; confirm users, source records, budget constraints and exclusions.\\\hline
 \rowcolor{MeridianPale}
-1.1.1\newline Confirm stakeholder requirements and budget constraints & Gather HR, IT, Compliance and Finance requirements; confirm users, source records, budget constraints and exclusions. & Project manager & 32 & 4 working days & Project authorization; stakeholder availability. & Charter, GP3, stakeholder interviews, source inventories. & Requirements have IDs, priorities and owners; HR/\allowbreak{}Finance pilot and financial constraints documented.\\\hline
-1.1.2\newline Define acceptance criteria and verification methods & Define measurable acceptance criteria and the test, review or reconciliation for each requirement. & Technical lead --- BCDK consulting team (Kshitij Dani) & 24 & 3 working days & 1.1.1 SS +1 day; finalize after requirements confirmation. & Requirements record; Section 1.4 targets; Section 6 quality criteria; HR/\allowbreak{}Compliance reviewers. & Every requirement has a verification method, acceptance owner and testable criterion consistent with scope.\\\hline
+\textbf{Responsible role} & Project manager\\\hline
+\textbf{Effort (person-hours)} & 32\\\hline
 \rowcolor{MeridianPale}
-1.2.1\newline Document requirements and verification links & Link requirements to implementation and verification packages; identify gaps and acceptance-evidence locations. & Project manager & 24 & 3 working days & 1.1.2 SS +1 day; finalize links before approval. & Requirements record, WBS, dictionary; technical lead support. & All requirements mapped to implementation and verification; no high-priority gaps.\\\hline
-1.2.2\newline Obtain requirements and scope approval & Resolve review comments, record stakeholder approvals and save approved scope and requirements versions. & Project manager & 8 & 2 working days & 1.1.1, 1.1.2, 1.2.1 FS. & CHRO, HR, IT, Compliance and Finance reviewers; approval log. & HR/\allowbreak{}IT/\allowbreak{}Compliance approve requirements, Finance confirms constraints and CHRO approves scope; names, dates and versions recorded.\\\hline
+\textbf{Duration (working days)} & 4 working days\\\hline
+\textbf{Dependencies} & Project authorization; stakeholder availability.\\\hline
 \rowcolor{MeridianPale}
-1.3.1\newline Maintain project controls and recurring communications & Maintain schedule, risk/\allowbreak{}change logs, weekly delivery reporting and Part 5 recurring coordination throughout the project. Separate management level of effort; 4 hours per project week \(\times\) 53 weeks. & Project manager /\allowbreak{} PMO coordination pool & 212 & Through closure (level of effort; 53 project weeks) & 1.1.1 SS; 8.3.2 FF. & PM, deputy PM and coordination support; approved Teams/\allowbreak{}Jira and shared project records. & Recurring meetings, weekly delivery reports, monthly written sponsor updates and decision/\allowbreak{}action logs kept current through closure. 212 baseline person-hours, additional to original 1,544 hours; no double counting.\\\hline
+\textbf{Required resources} & Charter, GP3, stakeholder interviews, source inventories.\\\hline
+\textbf{Acceptance criteria} & Requirements have IDs, priorities and owners; HR/\allowbreak{}Finance pilot and financial constraints documented.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 1.1.2\newline Define acceptance criteria and verification methods\\\hline
+\textbf{Description of work} & Define measurable acceptance criteria and the test, review or reconciliation for each requirement.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Technical lead --- BCDK consulting team (Kshitij Dani)\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 1.1.1 SS +1 day; finalize after requirements confirmation.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Requirements record; Section 1.4 targets; Section 6 quality criteria; HR/\allowbreak{}Compliance reviewers.\\\hline
+\textbf{Acceptance criteria} & Every requirement has a verification method, acceptance owner and testable criterion consistent with scope.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 1.2.1\newline Document requirements and verification links\\\hline
+\textbf{Description of work} & Link requirements to implementation and verification packages; identify gaps and acceptance-evidence locations.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Project manager\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 1.1.2 SS +1 day; finalize links before approval.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Requirements record, WBS, dictionary; technical lead support.\\\hline
+\textbf{Acceptance criteria} & All requirements mapped to implementation and verification; no high-priority gaps.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 1.2.2\newline Obtain requirements and scope approval\\\hline
+\textbf{Description of work} & Resolve review comments, record stakeholder approvals and save approved scope and requirements versions.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Project manager\\\hline
+\textbf{Effort (person-hours)} & 8\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 2 working days\\\hline
+\textbf{Dependencies} & 1.1.1, 1.1.2, 1.2.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & CHRO, HR, IT, Compliance and Finance reviewers; approval log.\\\hline
+\textbf{Acceptance criteria} & HR/\allowbreak{}IT/\allowbreak{}Compliance approve requirements, Finance confirms constraints and CHRO approves scope; names, dates and versions recorded.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 1.3.1\newline Maintain project controls and recurring communications\\\hline
+\textbf{Description of work} & Maintain schedule, risk/\allowbreak{}change logs, weekly delivery reporting and Part 5 recurring coordination throughout the project. Separate management level of effort; 4 hours per project week \(\times\) 53 weeks.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Project manager /\allowbreak{} PMO coordination pool\\\hline
+\textbf{Effort (person-hours)} & 212\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & Through closure (level of effort; 53 project weeks)\\\hline
+\textbf{Dependencies} & 1.1.1 SS; 8.3.2 FF.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & PM, deputy PM and coordination support; approved Teams/\allowbreak{}Jira and shared project records.\\\hline
+\textbf{Acceptance criteria} & Recurring meetings, weekly delivery reports, monthly written sponsor updates and decision/\allowbreak{}action logs kept current through closure. 212 baseline person-hours, additional to original 1,544 hours; no double counting.\\\hline
+\end{tabular}\\[6pt]
 \end{longtable}
 \endgroup
-\end{landscape}
 
 \clearpage
-\begin{landscape}
+
 \begingroup
-\fontsize{8.3}{10.4}\selectfont
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.17}
+\fontsize{9.5}{11.5}\selectfont
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
 \setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
 \captionof{table}{WBS dictionary: deliverable 2.0}\label{tab:wbs-2}
 \addtocounter{table}{-1}
-\begin{longtable}{|L{\dimexpr 0.160000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.200000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.130000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.055000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.070000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.120000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.115000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.150000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|}
+\begin{longtable}{@{}L{\linewidth}@{}}
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endfirsthead
-\multicolumn{8}{l}{\small\itshape WBS dictionary: deliverable 2.0 (continued)}\\[4pt]
+\small\itshape WBS dictionary: deliverable 2.0 (continued)\\[4pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endhead
-\multicolumn{8}{r}{\footnotesize\itshape Continued on next page}\\
+\hfill\footnotesize\itshape Continued on next page\\
 \endfoot
 \endlastfoot
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 2.1.1\newline Define evaluation criteria and assess candidates\\\hline
+\textbf{Description of work} & Agree weighted evaluation criteria and compare shortlisted commercial LMS platforms against approved requirements.\\\hline
 \rowcolor{MeridianPale}
-2.1.1\newline Define evaluation criteria and assess candidates & Agree weighted evaluation criteria and compare shortlisted commercial LMS platforms against approved requirements. & Project manager & 32 & 4 working days & 1.2.2 FS. & Requirements record; vendor responses and demonstrations; implementation consultant. & Criteria and weights approved; all shortlisted vendors assessed using the same criteria and supporting evidence.\\\hline
-2.1.2\newline Review accessibility, security and data export & Evaluate accessibility, permissions, security controls, record retention and data-export provisions. & Technical lead --- BCDK consulting team (Kshitij Dani) & 32 & 4 working days & 2.1.1 FS. & Vendor accessibility evidence, security documentation, sample exports; IT/\allowbreak{}Compliance reviewers. & Essential controls and accessibility gaps documented; IT/\allowbreak{}Compliance accept the proposed solution or require remediation before selection.\\\hline
+\textbf{Responsible role} & Project manager\\\hline
+\textbf{Effort (person-hours)} & 32\\\hline
 \rowcolor{MeridianPale}
-2.1.3\newline Review availability SLA and recovery commitments & Review vendor availability exclusions, monitoring access, recovery commitments and supporting evidence. & Meridian IT lead --- existing internal IT staff & 24 & 3 working days & 2.1.1 FS; parallel with 2.1.2. & Vendor SLA, recovery documentation, support terms; technical lead. & Written commitments address 99\% availability, 8-hour recovery and 24-hour maximum data loss; gaps resolved before contracting.\\\hline
-2.2.1\newline Compare costs and obtain CHRO /\allowbreak{} CFO approvals & Compare total costs and trade-offs; obtain vendor-selection and spending decisions. & Project manager & 24 & 3 working days & 2.1.2, 2.1.3 FS. & Vendor assessment, commercial proposals, Finance review; CHRO/\allowbreak{}CFO. & CHRO records selection approval; CFO approves financial commitment; assumptions and trade-offs recorded.\\\hline
+\textbf{Duration (working days)} & 4 working days\\\hline
+\textbf{Dependencies} & 1.2.2 FS.\\\hline
 \rowcolor{MeridianPale}
-2.2.2\newline Finalize contract and vendor responsibilities & Finalize licensing, configuration scope, support, security, data export and delivery responsibilities. & Procurement lead & 32 & 4 working days & 2.2.1 FS. & Vendor, Legal, IT and Finance; approved proposal and contract. & Contract executed by authorized signatories; costs, deliverables, SLAs, responsibilities and environment access confirmed.\\\hline
+\textbf{Required resources} & Requirements record; vendor responses and demonstrations; implementation consultant.\\\hline
+\textbf{Acceptance criteria} & Criteria and weights approved; all shortlisted vendors assessed using the same criteria and supporting evidence.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 2.1.2\newline Review accessibility, security and data export\\\hline
+\textbf{Description of work} & Evaluate accessibility, permissions, security controls, record retention and data-export provisions.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Technical lead --- BCDK consulting team (Kshitij Dani)\\\hline
+\textbf{Effort (person-hours)} & 32\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 4 working days\\\hline
+\textbf{Dependencies} & 2.1.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Vendor accessibility evidence, security documentation, sample exports; IT/\allowbreak{}Compliance reviewers.\\\hline
+\textbf{Acceptance criteria} & Essential controls and accessibility gaps documented; IT/\allowbreak{}Compliance accept the proposed solution or require remediation before selection.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 2.1.3\newline Review availability SLA and recovery commitments\\\hline
+\textbf{Description of work} & Review vendor availability exclusions, monitoring access, recovery commitments and supporting evidence.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Meridian IT lead --- existing internal IT staff\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 2.1.1 FS; parallel with 2.1.2.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Vendor SLA, recovery documentation, support terms; technical lead.\\\hline
+\textbf{Acceptance criteria} & Written commitments address 99\% availability, 8-hour recovery and 24-hour maximum data loss; gaps resolved before contracting.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 2.2.1\newline Compare costs and obtain CHRO /\allowbreak{} CFO approvals\\\hline
+\textbf{Description of work} & Compare total costs and trade-offs; obtain vendor-selection and spending decisions.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Project manager\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 2.1.2, 2.1.3 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Vendor assessment, commercial proposals, Finance review; CHRO/\allowbreak{}CFO.\\\hline
+\textbf{Acceptance criteria} & CHRO records selection approval; CFO approves financial commitment; assumptions and trade-offs recorded.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 2.2.2\newline Finalize contract and vendor responsibilities\\\hline
+\textbf{Description of work} & Finalize licensing, configuration scope, support, security, data export and delivery responsibilities.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Procurement lead\\\hline
+\textbf{Effort (person-hours)} & 32\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 4 working days\\\hline
+\textbf{Dependencies} & 2.2.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Vendor, Legal, IT and Finance; approved proposal and contract.\\\hline
+\textbf{Acceptance criteria} & Contract executed by authorized signatories; costs, deliverables, SLAs, responsibilities and environment access confirmed.\\\hline
+\end{tabular}\\[6pt]
 \end{longtable}
 \endgroup
-\end{landscape}
 
 \clearpage
-\begin{landscape}
+
 \begingroup
-\fontsize{8.3}{10.4}\selectfont
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.17}
+\fontsize{9.5}{11.5}\selectfont
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
 \setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
 \captionof{table}{WBS dictionary: deliverable 3.0}\label{tab:wbs-3}
 \addtocounter{table}{-1}
-\begin{longtable}{|L{\dimexpr 0.160000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.200000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.130000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.055000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.070000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.120000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.115000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.150000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|}
+\begin{longtable}{@{}L{\linewidth}@{}}
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endfirsthead
-\multicolumn{8}{l}{\small\itshape WBS dictionary: deliverable 3.0 (continued)}\\[4pt]
+\small\itshape WBS dictionary: deliverable 3.0 (continued)\\[4pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endhead
-\multicolumn{8}{r}{\footnotesize\itshape Continued on next page}\\
+\hfill\footnotesize\itshape Continued on next page\\
 \endfoot
 \endlastfoot
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 3.1.1\newline Configure employee accounts and role permissions\\\hline
+\textbf{Description of work} & Configure Meridian single sign-on (SSO), authorized employee accounts and learner, instructor, manager and administrator permissions.\\\hline
 \rowcolor{MeridianPale}
-3.1.1\newline Configure employee accounts and role permissions & Configure Meridian single sign-on (SSO), authorized employee accounts and learner, instructor, manager and administrator permissions. & Vendor configuration lead --- supplied by selected LMS vendor & 40 & 5 working days & 2.2.2 FS. & Vendor sandbox, Meridian identity provider and approved role model; Meridian IT identity owner and HR. & Vendor configures SSO; valid authorized accounts sign in on Meridian's network and receive correct roles; invalid/\allowbreak{}unauthorized access is blocked; Meridian IT approves identity/\allowbreak{}security settings and owns operational access.\\\hline
-3.1.2\newline Configure and verify record-change logging & Enable traceable administrative changes to employee and certification records and verify audit retrieval. & Meridian IT lead --- existing internal IT staff & 24 & 3 working days & 3.1.1 FS. & Sandbox, audit-log settings, representative records; vendor support. & Test changes record actor, time and changed information; authorized administrators can retrieve evidence.\\\hline
+\textbf{Responsible role} & Vendor configuration lead --- supplied by selected LMS vendor\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
 \rowcolor{MeridianPale}
-3.1.3\newline Configure course library and completion tracking & Configure the course library, learning progress, completion events and learner record updates. & Vendor configuration lead --- supplied by selected LMS vendor & 40 & 5 working days & 3.1.1 FS. & Sandbox, representative approved modules; LMS administrator and trainer. & Representative course can be opened, completed and recorded against the correct employee; trainer accepts workflow.\\\hline
-3.1.4\newline Configure role /\allowbreak{} department assignments & Configure HR-approved mandatory assignments by role and department and authorized assignment adjustments. & Vendor configuration lead --- supplied by selected LMS vendor & 32 & 4 working days & 3.1.3 FS. & Approved assignment rules, validated sample roles/\allowbreak{}departments; HR. & All defined sample role/\allowbreak{}department combinations receive expected courses; HR approves assignment configuration.\\\hline
+\textbf{Duration (working days)} & 5 working days\\\hline
+\textbf{Dependencies} & 2.2.2 FS.\\\hline
 \rowcolor{MeridianPale}
-3.2.1\newline Configure certification records and reports & Configure certification types, relevant dates and completion, overdue and expiration reports. & Vendor configuration lead --- supplied by selected LMS vendor & 40 & 5 working days & 3.1.4 FS. & Certification rules, sample records, report specifications; HR/\allowbreak{}Compliance. & Reports distinguish current, overdue and expiring cases; required fields agree with test records.\\\hline
-3.2.2\newline Configure performance and recovery dashboards & Configure dashboards for sign-in latency, concurrency, uptime, completion delays and recovery evidence. & Meridian IT lead --- existing internal IT staff & 40 & 5 working days & 3.2.1 FS; can overlap vendor work on 3.3.1. & Vendor telemetry, monitoring access, test events; Section 1.4 targets. & Dashboard displays required metrics and breach indicators; test events produce expected readings; IT accepts ownership.\\\hline
+\textbf{Required resources} & Vendor sandbox, Meridian identity provider and approved role model; Meridian IT identity owner and HR.\\\hline
+\textbf{Acceptance criteria} & Vendor configures SSO; valid authorized accounts sign in on Meridian's network and receive correct roles; invalid/\allowbreak{}unauthorized access is blocked; Meridian IT approves identity/\allowbreak{}security settings and owns operational access.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 3.1.2\newline Configure and verify record-change logging\\\hline
+\textbf{Description of work} & Enable traceable administrative changes to employee and certification records and verify audit retrieval.\\\hline
 \rowcolor{MeridianPale}
-3.3.1\newline Configure and test data-import process & Configure vendor-supported import templates, validation and error handling using synthetic test data. & Vendor configuration lead --- supplied by selected LMS vendor & 32 & 4 working days & 3.1.2, 3.2.1 FS. & Sandbox, approved import schema, synthetic records; IT. & Valid test records import correctly; invalid rows are rejected and logged; recovery steps demonstrated in sandbox.\\\hline
-3.3.2\newline Document configuration and approve migration readiness & Document settings, administrative procedures and configuration test results; conduct migration-readiness review. & Technical lead --- BCDK consulting team (Kshitij Dani) & 24 & 3 working days & 3.2.2, 3.3.1 FS. & Configuration records, IT/\allowbreak{}HR reviewers, vendor consultant. & IT/\allowbreak{}LMS administrators approve technical configuration, SSO/\allowbreak{}security settings and operational readiness. HR record owners accept business-record accuracy and completeness. Configuration documentation is versioned and complete.\\\hline
+\textbf{Responsible role} & Meridian IT lead --- existing internal IT staff\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 3.1.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Sandbox, audit-log settings, representative records; vendor support.\\\hline
+\textbf{Acceptance criteria} & Test changes record actor, time and changed information; authorized administrators can retrieve evidence.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 3.1.3\newline Configure course library and completion tracking\\\hline
+\textbf{Description of work} & Configure the course library, learning progress, completion events and learner record updates.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Vendor configuration lead --- supplied by selected LMS vendor\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 5 working days\\\hline
+\textbf{Dependencies} & 3.1.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Sandbox, representative approved modules; LMS administrator and trainer.\\\hline
+\textbf{Acceptance criteria} & Representative course can be opened, completed and recorded against the correct employee; trainer accepts workflow.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 3.1.4\newline Configure role /\allowbreak{} department assignments\\\hline
+\textbf{Description of work} & Configure HR-approved mandatory assignments by role and department and authorized assignment adjustments.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Vendor configuration lead --- supplied by selected LMS vendor\\\hline
+\textbf{Effort (person-hours)} & 32\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 4 working days\\\hline
+\textbf{Dependencies} & 3.1.3 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Approved assignment rules, validated sample roles/\allowbreak{}departments; HR.\\\hline
+\textbf{Acceptance criteria} & All defined sample role/\allowbreak{}department combinations receive expected courses; HR approves assignment configuration.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 3.2.1\newline Configure certification records and reports\\\hline
+\textbf{Description of work} & Configure certification types, relevant dates and completion, overdue and expiration reports.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Vendor configuration lead --- supplied by selected LMS vendor\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 5 working days\\\hline
+\textbf{Dependencies} & 3.1.4 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Certification rules, sample records, report specifications; HR/\allowbreak{}Compliance.\\\hline
+\textbf{Acceptance criteria} & Reports distinguish current, overdue and expiring cases; required fields agree with test records.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 3.2.2\newline Configure performance and recovery dashboards\\\hline
+\textbf{Description of work} & Configure dashboards for sign-in latency, concurrency, uptime, completion delays and recovery evidence.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Meridian IT lead --- existing internal IT staff\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 5 working days\\\hline
+\textbf{Dependencies} & 3.2.1 FS; can overlap vendor work on 3.3.1.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Vendor telemetry, monitoring access, test events; Section 1.4 targets.\\\hline
+\textbf{Acceptance criteria} & Dashboard displays required metrics and breach indicators; test events produce expected readings; IT accepts ownership.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 3.3.1\newline Configure and test data-import process\\\hline
+\textbf{Description of work} & Configure vendor-supported import templates, validation and error handling using synthetic test data.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Vendor configuration lead --- supplied by selected LMS vendor\\\hline
+\textbf{Effort (person-hours)} & 32\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 4 working days\\\hline
+\textbf{Dependencies} & 3.1.2, 3.2.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Sandbox, approved import schema, synthetic records; IT.\\\hline
+\textbf{Acceptance criteria} & Valid test records import correctly; invalid rows are rejected and logged; recovery steps demonstrated in sandbox.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 3.3.2\newline Document configuration and approve migration readiness\\\hline
+\textbf{Description of work} & Document settings, administrative procedures and configuration test results; conduct migration-readiness review.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Technical lead --- BCDK consulting team (Kshitij Dani)\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 3.2.2, 3.3.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Configuration records, IT/\allowbreak{}HR reviewers, vendor consultant.\\\hline
+\textbf{Acceptance criteria} & IT/\allowbreak{}LMS administrators approve technical configuration, SSO/\allowbreak{}security settings and operational readiness. HR record owners accept business-record accuracy and completeness. Configuration documentation is versioned and complete.\\\hline
+\end{tabular}\\[6pt]
 \end{longtable}
 \endgroup
-\end{landscape}
 
 \clearpage
-\begin{landscape}
+
 \begingroup
-\fontsize{8.3}{10.4}\selectfont
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.17}
+\fontsize{9.5}{11.5}\selectfont
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
 \setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
 \captionof{table}{WBS dictionary: deliverable 4.0}\label{tab:wbs-4}
 \addtocounter{table}{-1}
-\begin{longtable}{|L{\dimexpr 0.160000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.200000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.130000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.055000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.070000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.120000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.115000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.150000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|}
+\begin{longtable}{@{}L{\linewidth}@{}}
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endfirsthead
-\multicolumn{8}{l}{\small\itshape WBS dictionary: deliverable 4.0 (continued)}\\[4pt]
+\small\itshape WBS dictionary: deliverable 4.0 (continued)\\[4pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endhead
-\multicolumn{8}{r}{\footnotesize\itshape Continued on next page}\\
+\hfill\footnotesize\itshape Continued on next page\\
 \endfoot
 \endlastfoot
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 4.1.1\newline Inventory and assess existing training materials\\\hline
+\textbf{Description of work} & Inventory existing HR-approved PDF, DOCX, PPTX and Markdown materials and existing packaged courses. Identify suitability, versions, owners and any existing SCORM 1.2/\allowbreak{}xAPI package requirements.\\\hline
 \rowcolor{MeridianPale}
-4.1.1\newline Inventory and assess existing training materials & Inventory existing HR-approved PDF, DOCX, PPTX and Markdown materials and existing packaged courses. Identify suitability, versions, owners and any existing SCORM 1.2/\allowbreak{}xAPI package requirements. & Training lead --- BCDK consulting team (Sekoya Kinsey) & 24 & 3 working days & 1.2.2 FS; perform during configuration period. & Source repositories; HR and designated trainers. & HR approves the in-scope inventory. It distinguishes suitable documents, existing packaged courses, duplicates and practical-only content. No new curriculum, instructional videos, quizzes or interactive materials are introduced.\\\hline
-4.1.2\newline Approve sample conversion and content checklist & Convert representative approved documents and test representative existing packaged courses. Agree content-preservation, accessibility and functionality checks for each supported format. & Training lead --- BCDK consulting team (Sekoya Kinsey) & 24 & 3 working days & 4.1.1 FS; 3.1.3 FS for LMS sample verification. & Representative source files, configured course library; trainer/\allowbreak{}HR reviewers. & HR/\allowbreak{}trainers approve samples and the checklist before bulk conversion. Existing packaged-course activities, quiz logic and media are preserved where supported. Individual documents do not require SCORM/\allowbreak{}xAPI packaging.\\\hline
+\textbf{Responsible role} & Training lead --- BCDK consulting team (Sekoya Kinsey)\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
 \rowcolor{MeridianPale}
-4.2.1\newline Convert in-scope PDF, DOCX, PPTX and Markdown & Convert approved PDF, DOCX, PPTX and Markdown materials into vendor-supported formats using agreed templates. Carry over existing approved packaged courses using supported SCORM 1.2/\allowbreak{}xAPI formats where applicable. Individual documents are not converted into SCORM/\allowbreak{}xAPI packages. & Training lead --- BCDK (Sekoya), with existing Meridian trainers/\allowbreak{}SMEs & 40 & 5 working days & 4.1.2 FS. & Existing Meridian trainers/\allowbreak{}SMEs; BCDK training lead; approved source inventory; existing conversion tools; contracted vendor format guidance. No separate specialist hire assumed. & All approved conversion outputs are produced with source/\allowbreak{}version links. Existing packaged-course behavior is preserved where supported. No new curriculum, videos, quizzes or interactive materials are created. Additional authoring or packaging follows Section 1.11.\\\hline
-4.2.2\newline Check accessibility, content and module functionality & Check converted modules against source content, accessibility requirements, media, links and assessments. & Training lead --- BCDK consulting team (Sekoya Kinsey) & 40 & 5 working days & 4.2.1 FS. & Conversion checklist, sandbox; accessibility reviewer and designated trainers. & Every in-scope module reviewed; findings logged with owners; required content and functionality verified.\\\hline
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 1.2.2 FS; perform during configuration period.\\\hline
 \rowcolor{MeridianPale}
-4.2.3\newline Revise materials and obtain HR /\allowbreak{} trainer approval & Correct conversion defects and secure HR/\allowbreak{}trainer approval before importing approved materials. & Training lead --- BCDK consulting team (Sekoya Kinsey) & 32 & 4 working days & 4.2.2 FS. & Defect log, existing Meridian trainers/\allowbreak{}SMEs, HR/\allowbreak{}trainer reviewers. & Rejected materials revised and rechecked; publication versions approved; no unresolved content blockers.\\\hline
+\textbf{Required resources} & Source repositories; HR and designated trainers.\\\hline
+\textbf{Acceptance criteria} & HR approves the in-scope inventory. It distinguishes suitable documents, existing packaged courses, duplicates and practical-only content. No new curriculum, instructional videos, quizzes or interactive materials are introduced.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 4.1.2\newline Approve sample conversion and content checklist\\\hline
+\textbf{Description of work} & Convert representative approved documents and test representative existing packaged courses. Agree content-preservation, accessibility and functionality checks for each supported format.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Training lead --- BCDK consulting team (Sekoya Kinsey)\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 4.1.1 FS; 3.1.3 FS for LMS sample verification.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Representative source files, configured course library; trainer/\allowbreak{}HR reviewers.\\\hline
+\textbf{Acceptance criteria} & HR/\allowbreak{}trainers approve samples and the checklist before bulk conversion. Existing packaged-course activities, quiz logic and media are preserved where supported. Individual documents do not require SCORM/\allowbreak{}xAPI packaging.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 4.2.1\newline Convert in-scope PDF, DOCX, PPTX and Markdown\\\hline
+\textbf{Description of work} & Convert approved PDF, DOCX, PPTX and Markdown materials into vendor-supported formats using agreed templates. Carry over existing approved packaged courses using supported SCORM 1.2/\allowbreak{}xAPI formats where applicable. Individual documents are not converted into SCORM/\allowbreak{}xAPI packages.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Training lead --- BCDK (Sekoya), with existing Meridian trainers/\allowbreak{}SMEs\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 5 working days\\\hline
+\textbf{Dependencies} & 4.1.2 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Existing Meridian trainers/\allowbreak{}SMEs; BCDK training lead; approved source inventory; existing conversion tools; contracted vendor format guidance. No separate specialist hire assumed.\\\hline
+\textbf{Acceptance criteria} & All approved conversion outputs are produced with source/\allowbreak{}version links. Existing packaged-course behavior is preserved where supported. No new curriculum, videos, quizzes or interactive materials are created. Additional authoring or packaging follows Section 1.11.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 4.2.2\newline Check accessibility, content and module functionality\\\hline
+\textbf{Description of work} & Check converted modules against source content, accessibility requirements, media, links and assessments.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Training lead --- BCDK consulting team (Sekoya Kinsey)\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 5 working days\\\hline
+\textbf{Dependencies} & 4.2.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Conversion checklist, sandbox; accessibility reviewer and designated trainers.\\\hline
+\textbf{Acceptance criteria} & Every in-scope module reviewed; findings logged with owners; required content and functionality verified.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 4.2.3\newline Revise materials and obtain HR /\allowbreak{} trainer approval\\\hline
+\textbf{Description of work} & Correct conversion defects and secure HR/\allowbreak{}trainer approval before importing approved materials.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Training lead --- BCDK consulting team (Sekoya Kinsey)\\\hline
+\textbf{Effort (person-hours)} & 32\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 4 working days\\\hline
+\textbf{Dependencies} & 4.2.2 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Defect log, existing Meridian trainers/\allowbreak{}SMEs, HR/\allowbreak{}trainer reviewers.\\\hline
+\textbf{Acceptance criteria} & Rejected materials revised and rechecked; publication versions approved; no unresolved content blockers.\\\hline
+\end{tabular}\\[6pt]
 \end{longtable}
 \endgroup
-\end{landscape}
 
 \clearpage
-\begin{landscape}
+
 \begingroup
-\fontsize{8.3}{10.4}\selectfont
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.17}
+\fontsize{9.5}{11.5}\selectfont
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
 \setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
 \captionof{table}{WBS dictionary: deliverable 5.0}\label{tab:wbs-5}
 \addtocounter{table}{-1}
-\begin{longtable}{|L{\dimexpr 0.160000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.200000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.130000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.055000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.070000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.120000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.115000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.150000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|}
+\begin{longtable}{@{}L{\linewidth}@{}}
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endfirsthead
-\multicolumn{8}{l}{\small\itshape WBS dictionary: deliverable 5.0 (continued)}\\[4pt]
+\small\itshape WBS dictionary: deliverable 5.0 (continued)\\[4pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endhead
-\multicolumn{8}{r}{\footnotesize\itshape Continued on next page}\\
+\hfill\footnotesize\itshape Continued on next page\\
 \endfoot
 \endlastfoot
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 5.1.1\newline Define migration plan, field mappings and recovery steps\\\hline
+\textbf{Description of work} & Define source-to-target mappings, batches, reconciliation, exception handling and migration rollback.\\\hline
 \rowcolor{MeridianPale}
-5.1.1\newline Define migration plan, field mappings and recovery steps & Define source-to-target mappings, batches, reconciliation, exception handling and migration rollback. & Technical lead --- BCDK consulting team (Kshitij Dani) & 32 & 4 working days & 3.3.2 FS; migration work starts after configuration approval. & Validated source schema, import templates, HR/\allowbreak{}Compliance and vendor. & IT/\allowbreak{}HR approve required-field mappings, recovery steps, reconciliation and batch acceptance rules before 5.1.3 trial import. Trial results must be verified before 5.2.1 bulk import.\\\hline
-5.1.2\newline Clean employee, role and certification source records & Clean employee identifiers, roles, department data and certification histories; flag missing or inconsistent values. & LMS administrator & 40 & 5 working days & 3.3.2 FS; run alongside 5.1.1. & Authorized source exports, HR data owners; IT support. & Duplicates resolved or flagged; required fields validated; unresolved source exceptions have owners and an audit trail.\\\hline
+\textbf{Responsible role} & Technical lead --- BCDK consulting team (Kshitij Dani)\\\hline
+\textbf{Effort (person-hours)} & 32\\\hline
 \rowcolor{MeridianPale}
-5.1.3\newline Trial import and validate mapping results & Trial-import representative records and compare mapped fields and certification statuses. & Technical lead --- BCDK consulting team (Kshitij Dani) & 24 & 2 working days & 5.1.1, 5.1.2 FS. & Vendor sandbox; LMS administrator and developer support. & Trial records reconcile; erroneous transformations fixed; IT/\allowbreak{}HR authorize bulk import. Staffing: 24 h across two contributors.\\\hline
-5.2.1\newline Import all in-scope records and approved materials & Import all in-scope employee/\allowbreak{}training/\allowbreak{}certification records and publish approved training materials. & LMS administrator & 40 & 3 working days & 5.1.3, 4.2.3 FS. & Vendor import tools; developer/\allowbreak{}IT support; approved materials and records. & All intended batches accounted for; counts, failures and source references logged. Staffing: 40 h across two contributors.\\\hline
+\textbf{Duration (working days)} & 4 working days\\\hline
+\textbf{Dependencies} & 3.3.2 FS; migration work starts after configuration approval.\\\hline
 \rowcolor{MeridianPale}
-5.3.1\newline Reconcile each batch against validated sources & Compare imported counts and required fields with validated sources, counting missing records as failures. & LMS administrator & 32 & 3 working days & 5.2.1 FS. & Reconciliation reports/\allowbreak{}scripts; developer and HR data owners. & At least 95\% initial record match on all required fields; missing records count as failures; every discrepancy logged; no unexplained count difference. All discrepancies resolved/\allowbreak{}rechecked before 5.3.3 acceptance. Staffing: 32 h across two contributors.\\\hline
-5.3.2\newline Verify exceptions with record owners and backfill data & Investigate discrepancies with affected employees or record owners; verify evidence and backfill corrections. & HR records lead & 32 & 2 working days & 5.3.1 FS. & Exception log, authoritative evidence; LMS administrator support. & Every discrepancy corrected using verified evidence; unverified records not represented as valid certification. Staffing: 32 h across two contributors.\\\hline
+\textbf{Required resources} & Validated source schema, import templates, HR/\allowbreak{}Compliance and vendor.\\\hline
+\textbf{Acceptance criteria} & IT/\allowbreak{}HR approve required-field mappings, recovery steps, reconciliation and batch acceptance rules before 5.1.3 trial import. Trial results must be verified before 5.2.1 bulk import.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 5.1.2\newline Clean employee, role and certification source records\\\hline
+\textbf{Description of work} & Clean employee identifiers, roles, department data and certification histories; flag missing or inconsistent values.\\\hline
 \rowcolor{MeridianPale}
-5.3.3\newline Recheck corrections and obtain migration acceptance & Rerun affected checks and obtain technical and data-owner acceptance of migration batches. & Technical lead --- BCDK consulting team (Kshitij Dani) & 24 & 2 working days & 5.3.2 FS. & Reconciliation evidence, IT/\allowbreak{}LMS administrators, HR record owners and Compliance. & All logged discrepancies resolved and rechecked before batch acceptance; approvals recorded. Staffing: 24 h across reviewers/\allowbreak{}contributors.\\\hline
+\textbf{Responsible role} & LMS administrator\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 5 working days\\\hline
+\textbf{Dependencies} & 3.3.2 FS; run alongside 5.1.1.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Authorized source exports, HR data owners; IT support.\\\hline
+\textbf{Acceptance criteria} & Duplicates resolved or flagged; required fields validated; unresolved source exceptions have owners and an audit trail.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 5.1.3\newline Trial import and validate mapping results\\\hline
+\textbf{Description of work} & Trial-import representative records and compare mapped fields and certification statuses.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Technical lead --- BCDK consulting team (Kshitij Dani)\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 2 working days\\\hline
+\textbf{Dependencies} & 5.1.1, 5.1.2 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Vendor sandbox; LMS administrator and developer support.\\\hline
+\textbf{Acceptance criteria} & Trial records reconcile; erroneous transformations fixed; IT/\allowbreak{}HR authorize bulk import. Staffing: 24 h across two contributors.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 5.2.1\newline Import all in-scope records and approved materials\\\hline
+\textbf{Description of work} & Import all in-scope employee/\allowbreak{}training/\allowbreak{}certification records and publish approved training materials.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & LMS administrator\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 5.1.3, 4.2.3 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Vendor import tools; developer/\allowbreak{}IT support; approved materials and records.\\\hline
+\textbf{Acceptance criteria} & All intended batches accounted for; counts, failures and source references logged. Staffing: 40 h across two contributors.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 5.3.1\newline Reconcile each batch against validated sources\\\hline
+\textbf{Description of work} & Compare imported counts and required fields with validated sources, counting missing records as failures.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & LMS administrator\\\hline
+\textbf{Effort (person-hours)} & 32\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 5.2.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Reconciliation reports/\allowbreak{}scripts; developer and HR data owners.\\\hline
+\textbf{Acceptance criteria} & At least 95\% initial record match on all required fields; missing records count as failures; every discrepancy logged; no unexplained count difference. All discrepancies resolved/\allowbreak{}rechecked before 5.3.3 acceptance. Staffing: 32 h across two contributors.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 5.3.2\newline Verify exceptions with record owners and backfill data\\\hline
+\textbf{Description of work} & Investigate discrepancies with affected employees or record owners; verify evidence and backfill corrections.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & HR records lead\\\hline
+\textbf{Effort (person-hours)} & 32\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 2 working days\\\hline
+\textbf{Dependencies} & 5.3.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Exception log, authoritative evidence; LMS administrator support.\\\hline
+\textbf{Acceptance criteria} & Every discrepancy corrected using verified evidence; unverified records not represented as valid certification. Staffing: 32 h across two contributors.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 5.3.3\newline Recheck corrections and obtain migration acceptance\\\hline
+\textbf{Description of work} & Rerun affected checks and obtain technical and data-owner acceptance of migration batches.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Technical lead --- BCDK consulting team (Kshitij Dani)\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 2 working days\\\hline
+\textbf{Dependencies} & 5.3.2 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Reconciliation evidence, IT/\allowbreak{}LMS administrators, HR record owners and Compliance.\\\hline
+\textbf{Acceptance criteria} & All logged discrepancies resolved and rechecked before batch acceptance; approvals recorded. Staffing: 24 h across reviewers/\allowbreak{}contributors.\\\hline
+\end{tabular}\\[6pt]
 \end{longtable}
 \endgroup
-\end{landscape}
 
 \clearpage
-\begin{landscape}
+
 \begingroup
-\fontsize{8.3}{10.4}\selectfont
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.17}
+\fontsize{9.5}{11.5}\selectfont
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
 \setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
 \captionof{table}{WBS dictionary: deliverable 6.0}\label{tab:wbs-6}
 \addtocounter{table}{-1}
-\begin{longtable}{|L{\dimexpr 0.160000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.200000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.130000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.055000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.070000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.120000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.115000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.150000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|}
+\begin{longtable}{@{}L{\linewidth}@{}}
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endfirsthead
-\multicolumn{8}{l}{\small\itshape WBS dictionary: deliverable 6.0 (continued)}\\[4pt]
+\small\itshape WBS dictionary: deliverable 6.0 (continued)\\[4pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endhead
-\multicolumn{8}{r}{\footnotesize\itshape Continued on next page}\\
+\hfill\footnotesize\itshape Continued on next page\\
 \endfoot
 \endlastfoot
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 6.1.1\newline Confirm HR /\allowbreak{} Finance pilot users and test scenarios\\\hline
+\textbf{Description of work} & Confirm HR/\allowbreak{}Finance pilot users, representative clinical-role scenarios and expected test results.\\\hline
 \rowcolor{MeridianPale}
-6.1.1\newline Confirm HR /\allowbreak{} Finance pilot users and test scenarios & Confirm HR/\allowbreak{}Finance pilot users, representative clinical-role scenarios and expected test results. & Project manager & 24 & 3 working days & 5.3.3, 7.1.3 FS. & HR/\allowbreak{}Finance managers, trainers and Compliance; test accounts and scripts. & Pilot roster, user availability, critical scenarios and acceptance criteria approved; clinical certification cases included.\\\hline
-6.1.2\newline Test access, security, workflows and accessibility & Execute Meridian SSO, role access, security, assignments, learning completion, reporting and WCAG 2.2 AA accessibility tests. & Technical lead --- BCDK consulting team (Kshitij Dani) & 40 & 5 working days & 6.1.1 FS. & Pilot users, configured LMS, approved scripts; IT/\allowbreak{}accessibility reviewers. & All cases have evidence; SSO authorized/\allowbreak{}unauthorized cases tested; accessibility nonconformities corrected and retested; failures logged; all critical cases pass before 6.3.2.\\\hline
+\textbf{Responsible role} & Project manager\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
 \rowcolor{MeridianPale}
-6.2.1\newline Test 95\% of SSO sign-ins in under 3.0 seconds & Measure sign-in latency from valid-credential submission to authenticated-session availability. & Meridian IT lead --- existing internal IT staff & 24 & 3 working days & 6.1.1 FS. & Test accounts, load/\allowbreak{}test instrumentation; vendor support. & At least 95\% of measured SSO sign-ins complete in under 3.0 seconds, from valid-credential submission to authenticated-session availability on Meridian's network, including the representative 5,000-user workload.\\\hline
-6.2.2\newline Load-test 5,000 concurrent users & Run representative learning workloads at 5,000 simultaneous users in a vendor-approved environment. & Vendor performance-test lead --- supplied by selected LMS vendor & 32 & 4 working days & 6.1.1 FS. & Load generator, vendor test environment, IT and synthetic users. & 5,000 concurrent users supported; applicable latency and recording targets met; failures and limitations documented.\\\hline
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 5.3.3, 7.1.3 FS.\\\hline
 \rowcolor{MeridianPale}
-6.2.3\newline Test 5-minute completion recording and report accuracy & Compare completion timestamps with employee-record/\allowbreak{}report updates and validate report fields. & LMS administrator & 24 & 3 working days & 6.1.1 FS. & Known certification cases, course completion events; HR/\allowbreak{}Compliance reviewers. & Test completions appear in records and reports within 5 minutes; required pilot reporting fields match expected values.\\\hline
-6.2.4\newline Monitor pilot availability against 99\% target & Monitor availability during the pilot and check uptime calculations, exclusions and dashboard reporting. & Meridian IT lead --- existing internal IT staff & 16 & 10 working days & 6.1.1 SS; runs through pilot testing. & Vendor monitoring feed, dashboard, agreed maintenance exclusions. & Pilot availability and incidents documented; dashboard functioning. Monthly 99\% compliance remains subject to full-month monitoring.\\\hline
+\textbf{Required resources} & HR/\allowbreak{}Finance managers, trainers and Compliance; test accounts and scripts.\\\hline
+\textbf{Acceptance criteria} & Pilot roster, user availability, critical scenarios and acceptance criteria approved; clinical certification cases included.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 6.1.2\newline Test access, security, workflows and accessibility\\\hline
+\textbf{Description of work} & Execute Meridian SSO, role access, security, assignments, learning completion, reporting and WCAG 2.2 AA accessibility tests.\\\hline
 \rowcolor{MeridianPale}
-6.2.5\newline Review recovery evidence against 8-hour /\allowbreak{} 24-hour targets & Review recovery-test evidence and record restoration time and verified data-loss window. & Meridian IT lead --- existing internal IT staff & 16 & 2 working days & 6.1.1 FS. & Vendor recovery report, backup status, support commitments. & Evidence supports restoration within 8 hours and data loss within 24 hours; gaps escalated before rollout.\\\hline
-6.3.1\newline Collect feedback, resolve defects and retest & Consolidate feedback, correct failed workflows and regression-test affected functionality. & Technical lead --- BCDK consulting team (Kshitij Dani) & 40 & 15 working days & 6.1.2, 6.2.1, 6.2.2, 6.2.3, 6.2.4, 6.2.5 FS. & Defect/\allowbreak{}feedback log, vendor remediation support; pilot users. & All critical defects resolved; critical tests pass on retest; remaining minor issues have agreed owners and disposition.\\\hline
+\textbf{Responsible role} & Technical lead --- BCDK consulting team (Kshitij Dani)\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
 \rowcolor{MeridianPale}
-6.3.2\newline Evaluate pilot and obtain rollout /\allowbreak{} funding approvals & Evaluate pilot evidence, updated costs and risks; obtain pilot acceptance and rollout authorization. & Project manager & 24 & 4 working days & 6.3.1 FS. & Pilot report, rollout forecast; department managers, HR, IT, CHRO/\allowbreak{}CFO. & Pilot managers/\allowbreak{}HR/\allowbreak{}IT accept results; CHRO authorizes rollout; CFO confirms funding or approves required additions.\\\hline
+\textbf{Duration (working days)} & 5 working days\\\hline
+\textbf{Dependencies} & 6.1.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Pilot users, configured LMS, approved scripts; IT/\allowbreak{}accessibility reviewers.\\\hline
+\textbf{Acceptance criteria} & All cases have evidence; SSO authorized/\allowbreak{}unauthorized cases tested; accessibility nonconformities corrected and retested; failures logged; all critical cases pass before 6.3.2.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 6.2.1\newline Test 95\% of SSO sign-ins in under 3.0 seconds\\\hline
+\textbf{Description of work} & Measure sign-in latency from valid-credential submission to authenticated-session availability.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Meridian IT lead --- existing internal IT staff\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 6.1.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Test accounts, load/\allowbreak{}test instrumentation; vendor support.\\\hline
+\textbf{Acceptance criteria} & At least 95\% of measured SSO sign-ins complete in under 3.0 seconds, from valid-credential submission to authenticated-session availability on Meridian's network, including the representative 5,000-user workload.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 6.2.2\newline Load-test 5,000 concurrent users\\\hline
+\textbf{Description of work} & Run representative learning workloads at 5,000 simultaneous users in a vendor-approved environment.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Vendor performance-test lead --- supplied by selected LMS vendor\\\hline
+\textbf{Effort (person-hours)} & 32\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 4 working days\\\hline
+\textbf{Dependencies} & 6.1.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Load generator, vendor test environment, IT and synthetic users.\\\hline
+\textbf{Acceptance criteria} & 5,000 concurrent users supported; applicable latency and recording targets met; failures and limitations documented.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 6.2.3\newline Test 5-minute completion recording and report accuracy\\\hline
+\textbf{Description of work} & Compare completion timestamps with employee-record/\allowbreak{}report updates and validate report fields.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & LMS administrator\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 6.1.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Known certification cases, course completion events; HR/\allowbreak{}Compliance reviewers.\\\hline
+\textbf{Acceptance criteria} & Test completions appear in records and reports within 5 minutes; required pilot reporting fields match expected values.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 6.2.4\newline Monitor pilot availability against 99\% target\\\hline
+\textbf{Description of work} & Monitor availability during the pilot and check uptime calculations, exclusions and dashboard reporting.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Meridian IT lead --- existing internal IT staff\\\hline
+\textbf{Effort (person-hours)} & 16\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 10 working days\\\hline
+\textbf{Dependencies} & 6.1.1 SS; runs through pilot testing.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Vendor monitoring feed, dashboard, agreed maintenance exclusions.\\\hline
+\textbf{Acceptance criteria} & Pilot availability and incidents documented; dashboard functioning. Monthly 99\% compliance remains subject to full-month monitoring.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 6.2.5\newline Review recovery evidence against 8-hour /\allowbreak{} 24-hour targets\\\hline
+\textbf{Description of work} & Review recovery-test evidence and record restoration time and verified data-loss window.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Meridian IT lead --- existing internal IT staff\\\hline
+\textbf{Effort (person-hours)} & 16\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 2 working days\\\hline
+\textbf{Dependencies} & 6.1.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Vendor recovery report, backup status, support commitments.\\\hline
+\textbf{Acceptance criteria} & Evidence supports restoration within 8 hours and data loss within 24 hours; gaps escalated before rollout.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 6.3.1\newline Collect feedback, resolve defects and retest\\\hline
+\textbf{Description of work} & Consolidate feedback, correct failed workflows and regression-test affected functionality.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Technical lead --- BCDK consulting team (Kshitij Dani)\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 15 working days\\\hline
+\textbf{Dependencies} & 6.1.2, 6.2.1, 6.2.2, 6.2.3, 6.2.4, 6.2.5 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Defect/\allowbreak{}feedback log, vendor remediation support; pilot users.\\\hline
+\textbf{Acceptance criteria} & All critical defects resolved; critical tests pass on retest; remaining minor issues have agreed owners and disposition.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 6.3.2\newline Evaluate pilot and obtain rollout /\allowbreak{} funding approvals\\\hline
+\textbf{Description of work} & Evaluate pilot evidence, updated costs and risks; obtain pilot acceptance and rollout authorization.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Project manager\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 4 working days\\\hline
+\textbf{Dependencies} & 6.3.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Pilot report, rollout forecast; department managers, HR, IT, CHRO/\allowbreak{}CFO.\\\hline
+\textbf{Acceptance criteria} & Pilot managers/\allowbreak{}HR/\allowbreak{}IT accept results; CHRO authorizes rollout; CFO confirms funding or approves required additions.\\\hline
+\end{tabular}\\[6pt]
 \end{longtable}
 \endgroup
-\end{landscape}
 
 \clearpage
-\begin{landscape}
+
 \begingroup
-\fontsize{8.3}{10.4}\selectfont
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.17}
+\fontsize{9.5}{11.5}\selectfont
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
 \setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
 \captionof{table}{WBS dictionary: deliverable 7.0}\label{tab:wbs-7}
 \addtocounter{table}{-1}
-\begin{longtable}{|L{\dimexpr 0.160000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.200000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.130000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.055000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.070000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.120000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.115000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.150000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|}
+\begin{longtable}{@{}L{\linewidth}@{}}
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endfirsthead
-\multicolumn{8}{l}{\small\itshape WBS dictionary: deliverable 7.0 (continued)}\\[4pt]
+\small\itshape WBS dictionary: deliverable 7.0 (continued)\\[4pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endhead
-\multicolumn{8}{r}{\footnotesize\itshape Continued on next page}\\
+\hfill\footnotesize\itshape Continued on next page\\
 \endfoot
 \endlastfoot
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 7.1.1\newline Draft employee onboarding guides\\\hline
+\textbf{Description of work} & Draft employee onboarding guides for signing in, finding assigned courses, completing training and obtaining support. Document IT operating and record-maintenance procedures separately as handover runbooks.\\\hline
 \rowcolor{MeridianPale}
-7.1.1\newline Draft employee onboarding guides & Draft employee onboarding guides for signing in, finding assigned courses, completing training and obtaining support. Document IT operating and record-maintenance procedures separately as handover runbooks. & Training lead --- BCDK consulting team (Sekoya Kinsey) & 40 & 5 working days & 3.1.4, 3.2.1 FS. & Configured workflows, vendor documentation; trainers and LMS administrators. & Employee guides provide clear steps and current screenshots for agreed onboarding tasks. IT operating runbooks cover privileged administration separately and are reviewed by Meridian IT.\\\hline
-7.1.2\newline Validate guides with representative users before pilot & Have representative employees follow onboarding guides without project-team instruction. Meridian IT separately validates operating-runbook steps and privileged procedures. Correct missing or unclear steps. & Training lead --- BCDK consulting team (Sekoya Kinsey) & 24 & 3 working days & 7.1.1 FS. & Representative employees, trainers and approved IT/\allowbreak{}LMS administrators, using the sandbox. & Representative employees complete agreed onboarding tasks independently. IT verifies administrative runbook steps separately. Failed steps are revised and retested.\\\hline
+\textbf{Responsible role} & Training lead --- BCDK consulting team (Sekoya Kinsey)\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
 \rowcolor{MeridianPale}
-7.1.3\newline Prepare training sessions and vendor support materials & Prepare session plans, exercises and support instructions using available contractual vendor materials. & Training lead --- BCDK consulting team (Sekoya Kinsey) & 24 & 3 working days & 7.1.2 FS. & Vendor support materials, training environment; HR coordinators. & Session materials and support routes ready before pilot users are onboarded; vendor responsibilities confirmed.\\\hline
-7.2.1\newline Define paper-log transition and renewal follow-up & Define departmental paper-log cutover, certification-report review and renewal follow-up responsibilities. & HR operations lead & 24 & 3 working days & 6.3.2 FS. & HR/\allowbreak{}department managers, LMS report examples; communication plan. & Named owners, review cadence and follow-up process agreed; paper retirement conditional on department readiness.\\\hline
+\textbf{Duration (working days)} & 5 working days\\\hline
+\textbf{Dependencies} & 3.1.4, 3.2.1 FS.\\\hline
 \rowcolor{MeridianPale}
-7.2.2\newline Revise guides after pilot and obtain HR approval & Update guides using pilot findings, verify revised steps and obtain final publication approval. & Training lead --- BCDK consulting team (Sekoya Kinsey) & 16 & 2 working days & 6.3.2, 7.1.3 FS. & Pilot feedback, updated guides; HR reviewers. & HR approves the employee onboarding guides. IT approves the separate operating-runbook instructions. Current versions and distribution locations are recorded before rollout.\\\hline
+\textbf{Required resources} & Configured workflows, vendor documentation; trainers and LMS administrators.\\\hline
+\textbf{Acceptance criteria} & Employee guides provide clear steps and current screenshots for agreed onboarding tasks. IT operating runbooks cover privileged administration separately and are reviewed by Meridian IT.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 7.1.2\newline Validate guides with representative users before pilot\\\hline
+\textbf{Description of work} & Have representative employees follow onboarding guides without project-team instruction. Meridian IT separately validates operating-runbook steps and privileged procedures. Correct missing or unclear steps.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Training lead --- BCDK consulting team (Sekoya Kinsey)\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 7.1.1 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Representative employees, trainers and approved IT/\allowbreak{}LMS administrators, using the sandbox.\\\hline
+\textbf{Acceptance criteria} & Representative employees complete agreed onboarding tasks independently. IT verifies administrative runbook steps separately. Failed steps are revised and retested.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 7.1.3\newline Prepare training sessions and vendor support materials\\\hline
+\textbf{Description of work} & Prepare session plans, exercises and support instructions using available contractual vendor materials.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Training lead --- BCDK consulting team (Sekoya Kinsey)\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 7.1.2 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Vendor support materials, training environment; HR coordinators.\\\hline
+\textbf{Acceptance criteria} & Session materials and support routes ready before pilot users are onboarded; vendor responsibilities confirmed.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 7.2.1\newline Define paper-log transition and renewal follow-up\\\hline
+\textbf{Description of work} & Define departmental paper-log cutover, certification-report review and renewal follow-up responsibilities.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & HR operations lead\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 6.3.2 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & HR/\allowbreak{}department managers, LMS report examples; communication plan.\\\hline
+\textbf{Acceptance criteria} & Named owners, review cadence and follow-up process agreed; paper retirement conditional on department readiness.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 7.2.2\newline Revise guides after pilot and obtain HR approval\\\hline
+\textbf{Description of work} & Update guides using pilot findings, verify revised steps and obtain final publication approval.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Training lead --- BCDK consulting team (Sekoya Kinsey)\\\hline
+\textbf{Effort (person-hours)} & 16\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 2 working days\\\hline
+\textbf{Dependencies} & 6.3.2, 7.1.3 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Pilot feedback, updated guides; HR reviewers.\\\hline
+\textbf{Acceptance criteria} & HR approves the employee onboarding guides. IT approves the separate operating-runbook instructions. Current versions and distribution locations are recorded before rollout.\\\hline
+\end{tabular}\\[6pt]
 \end{longtable}
 \endgroup
-\end{landscape}
 
 \clearpage
-\begin{landscape}
+
 \begingroup
-\fontsize{8.3}{10.4}\selectfont
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.17}
+\fontsize{9.5}{11.5}\selectfont
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
 \setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
 \captionof{table}{WBS dictionary: deliverable 8.0}\label{tab:wbs-8}
 \addtocounter{table}{-1}
-\begin{longtable}{|L{\dimexpr 0.160000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.200000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.130000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.055000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.070000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.120000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.115000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.150000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|}
+\begin{longtable}{@{}L{\linewidth}@{}}
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endfirsthead
-\multicolumn{8}{l}{\small\itshape WBS dictionary: deliverable 8.0 (continued)}\\[4pt]
+\small\itshape WBS dictionary: deliverable 8.0 (continued)\\[4pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endhead
-\multicolumn{8}{r}{\footnotesize\itshape Continued on next page}\\
+\hfill\footnotesize\itshape Continued on next page\\
 \endfoot
 \endlastfoot
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 8.1.1\newline Plan waves, devices, training time and support coverage\\\hline
+\textbf{Description of work} & Define deployment waves, named departmental contacts, device access, training time and support coverage.\\\hline
 \rowcolor{MeridianPale}
-8.1.1\newline Plan waves, devices, training time and support coverage & Define deployment waves, named departmental contacts, device access, training time and support coverage. & Project manager & 40 & 10 working days & 6.3.2, 7.2.1, 7.2.2 FS. & Department managers, HR/\allowbreak{}IT, staffing commitments; rollout plan. & Wave plan and resource commitments approved; training/\allowbreak{}device arrangements confirmed; starts after pilot authorization.\\\hline
-8.1.2\newline Coordinate employee onboarding in each wave & Coordinate employee onboarding for each departmental wave, using approved guides and recording attendance, task completion and follow-up. & Training lead --- BCDK consulting team (Sekoya Kinsey) & 40 & 90 working days & 8.1.1 FS; start only after rollout readiness and August 1. & Department trainers/\allowbreak{}HR, approved guides, devices and scheduled training time. & Each wave records employee onboarding, task completion and failed-task follow-up. The 40 hours cover central coordination only. Departmental delivery and employee release time are excluded from the 1,756-hour subtotal and confirmed in each wave's readiness plan.\\\hline
+\textbf{Responsible role} & Project manager\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
 \rowcolor{MeridianPale}
-8.1.3\newline Validate record updates and approve each deployment & Validate post-migration record updates, access and training readiness; obtain each department's deployment approval. & LMS administrator & 40 & 90 working days & 8.1.1 FS; 8.1.2 SS; approval follows each wave's training checks. & HR data owners, IT, department managers; reconciliation and readiness checklists. & Each wave approved before activation; changed records rechecked; no unresolved critical data/\allowbreak{}access blockers.\\\hline
-8.2.1\newline Monitor latency, capacity, uptime and completion delays & Review dashboards and investigate breaches throughout deployment. Include the December 10--23 final-wave hypercare window; HRIS/\allowbreak{}L\&D owns triage and follow-through, supported by Meridian IT and the selected vendor. & Meridian IT lead --- existing internal IT staff & 40 & 100 working days & 8.1.3 SS; runs through final wave and stabilization. & Vendor telemetry, operational dashboard; support desk. & Latency, capacity, uptime and completion-delay metrics retained; breaches investigated; monthly SLA compliance reported.\\\hline
+\textbf{Duration (working days)} & 10 working days\\\hline
+\textbf{Dependencies} & 6.3.2, 7.2.1, 7.2.2 FS.\\\hline
 \rowcolor{MeridianPale}
-8.2.2\newline Resolve rollout issues and track recovery results & Coordinate rollout issue resolution and capture restoration/\allowbreak{}data-loss results. Support HRIS/\allowbreak{}L\&D-owned final-wave hypercare December 10--23; fix and verify Sev-1 incidents within 8 elapsed hours. & Technical lead --- BCDK consulting team (Kshitij Dani) & 40 & 100 working days & 8.2.1 SS; issue work follows detected incidents. & Vendor support, issue log, department contacts; recovery evidence. & Critical issues resolved before affected wave acceptance; incident response and recovery-target results documented.\\\hline
-8.3.1\newline Transfer runbooks, dashboards and support ownership & Transfer runbooks, configuration, reconciliation evidence, dashboards and support responsibilities. & Meridian IT lead --- existing internal IT staff & 32 & 5 working days & 8.1.2, 8.1.3, 8.2.1, 8.2.2 FS. & IT/\allowbreak{}HR operational owners, vendor support; handover checklist. & IT/\allowbreak{}LMS administrators and HR record owners accept operating ownership after stabilization. Known issues, runbooks and benefits-data responsibilities are documented. The HR Records Lead maintains HR administration-hour logs. The PM reports the 60--65\% reduction benefit by June 9, 2028, measured from final-wave completion on December 9, 2027. The baseline is average monthly hours in February--April 2027, compared with March--May 2028.\\\hline
+\textbf{Required resources} & Department managers, HR/\allowbreak{}IT, staffing commitments; rollout plan.\\\hline
+\textbf{Acceptance criteria} & Wave plan and resource commitments approved; training/\allowbreak{}device arrangements confirmed; starts after pilot authorization.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 8.1.2\newline Coordinate employee onboarding in each wave\\\hline
+\textbf{Description of work} & Coordinate employee onboarding for each departmental wave, using approved guides and recording attendance, task completion and follow-up.\\\hline
 \rowcolor{MeridianPale}
-8.3.2\newline Obtain operational, sponsor and financial closure & Obtain completion approval, reconcile expenditure and archive accepted project records. & Project manager & 24 & 3 working days & 8.3.1, 9.2.2 FS. & CHRO/\allowbreak{}CFO, final expenditure report, acceptance records; Finance. & CHRO approves completion; CFO confirms financial closure; records archived and outstanding operational actions assigned.\\\hline
+\textbf{Responsible role} & Training lead --- BCDK consulting team (Sekoya Kinsey)\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 90 working days\\\hline
+\textbf{Dependencies} & 8.1.1 FS; start only after rollout readiness and August 1.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Department trainers/\allowbreak{}HR, approved guides, devices and scheduled training time.\\\hline
+\textbf{Acceptance criteria} & Each wave records employee onboarding, task completion and failed-task follow-up. The 40 hours cover central coordination only. Departmental delivery and employee release time are excluded from the 1,756-hour subtotal and confirmed in each wave's readiness plan.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 8.1.3\newline Validate record updates and approve each deployment\\\hline
+\textbf{Description of work} & Validate post-migration record updates, access and training readiness; obtain each department's deployment approval.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & LMS administrator\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 90 working days\\\hline
+\textbf{Dependencies} & 8.1.1 FS; 8.1.2 SS; approval follows each wave's training checks.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & HR data owners, IT, department managers; reconciliation and readiness checklists.\\\hline
+\textbf{Acceptance criteria} & Each wave approved before activation; changed records rechecked; no unresolved critical data/\allowbreak{}access blockers.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 8.2.1\newline Monitor latency, capacity, uptime and completion delays\\\hline
+\textbf{Description of work} & Review dashboards and investigate breaches throughout deployment. Include the December 10--23 final-wave hypercare window; HRIS/\allowbreak{}L\&D owns triage and follow-through, supported by Meridian IT and the selected vendor.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Meridian IT lead --- existing internal IT staff\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 100 working days\\\hline
+\textbf{Dependencies} & 8.1.3 SS; runs through final wave and stabilization.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Vendor telemetry, operational dashboard; support desk.\\\hline
+\textbf{Acceptance criteria} & Latency, capacity, uptime and completion-delay metrics retained; breaches investigated; monthly SLA compliance reported.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 8.2.2\newline Resolve rollout issues and track recovery results\\\hline
+\textbf{Description of work} & Coordinate rollout issue resolution and capture restoration/\allowbreak{}data-loss results. Support HRIS/\allowbreak{}L\&D-owned final-wave hypercare December 10--23; fix and verify Sev-1 incidents within 8 elapsed hours.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Technical lead --- BCDK consulting team (Kshitij Dani)\\\hline
+\textbf{Effort (person-hours)} & 40\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 100 working days\\\hline
+\textbf{Dependencies} & 8.2.1 SS; issue work follows detected incidents.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Vendor support, issue log, department contacts; recovery evidence.\\\hline
+\textbf{Acceptance criteria} & Critical issues resolved before affected wave acceptance; incident response and recovery-target results documented.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 8.3.1\newline Transfer runbooks, dashboards and support ownership\\\hline
+\textbf{Description of work} & Transfer runbooks, configuration, reconciliation evidence, dashboards and support responsibilities.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Meridian IT lead --- existing internal IT staff\\\hline
+\textbf{Effort (person-hours)} & 32\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 5 working days\\\hline
+\textbf{Dependencies} & 8.1.2, 8.1.3, 8.2.1, 8.2.2 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & IT/\allowbreak{}HR operational owners, vendor support; handover checklist.\\\hline
+\textbf{Acceptance criteria} & IT/\allowbreak{}LMS administrators and HR record owners accept operating ownership after stabilization. Known issues, runbooks and benefits-data responsibilities are documented. The HR Records Lead maintains HR administration-hour logs. The PM reports the 60--65\% reduction benefit by June 9, 2028, measured from final-wave completion on December 9, 2027. The baseline is average monthly hours in February--April 2027, compared with March--May 2028.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 8.3.2\newline Obtain operational, sponsor and financial closure\\\hline
+\textbf{Description of work} & Obtain completion approval, reconcile expenditure and archive accepted project records.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Project manager\\\hline
+\textbf{Effort (person-hours)} & 24\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 3 working days\\\hline
+\textbf{Dependencies} & 8.3.1, 9.2.2 FS.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & CHRO/\allowbreak{}CFO, final expenditure report, acceptance records; Finance.\\\hline
+\textbf{Acceptance criteria} & CHRO approves completion; CFO confirms financial closure; records archived and outstanding operational actions assigned.\\\hline
+\end{tabular}\\[6pt]
 \end{longtable}
 \endgroup
-\end{landscape}
 
 \clearpage
-\begin{landscape}
+
 \begingroup
-\fontsize{8.3}{10.4}\selectfont
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.17}
+\fontsize{9.5}{11.5}\selectfont
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
 \setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
 \captionof{table}{WBS dictionary: deliverable 9.0}\label{tab:wbs-9}
 \addtocounter{table}{-1}
-\begin{longtable}{|L{\dimexpr 0.160000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.200000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.130000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.055000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.070000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.120000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.115000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|L{\dimexpr 0.150000\linewidth-2\tabcolsep-1.125000\arrayrulewidth\relax}|}
+\begin{longtable}{@{}L{\linewidth}@{}}
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endfirsthead
-\multicolumn{8}{l}{\small\itshape WBS dictionary: deliverable 9.0 (continued)}\\[4pt]
+\small\itshape WBS dictionary: deliverable 9.0 (continued)\\[4pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
 \hline
-\rowcolor{MeridianPurple} \color{white}\bfseries WBS ID and work package & \color{white}\bfseries Description of work & \color{white}\bfseries Responsible role & \color{white}\bfseries Hours & \color{white}\bfseries Working\newline days & \color{white}\bfseries Dependencies & \color{white}\bfseries Required resources & \color{white}\bfseries Acceptance criteria\\\hline
+\rowcolor{MeridianPurple}\color{white}\bfseries Field & \color{white}\bfseries Details\\\hline
+\end{tabular}\\
 \endhead
-\multicolumn{8}{r}{\footnotesize\itshape Continued on next page}\\
+\hfill\footnotesize\itshape Continued on next page\\
 \endfoot
 \endlastfoot
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 9.1.1\newline Create register and capture deferred enhancements\\\hline
+\textbf{Description of work} & Create the deferred-feature register and capture enhancement requests without authorizing implementation.\\\hline
 \rowcolor{MeridianPale}
-9.1.1\newline Create register and capture deferred enhancements & Create the deferred-feature register and capture enhancement requests without authorizing implementation. & Project manager & 8 & Through final rollout (level of effort) & 1.2.2 FS; maintained through final rollout. & Change log, stakeholder feedback, register template. & Deferred requests have IDs, descriptions, requesters and status; register kept current at change reviews.\\\hline
-9.2.1\newline Assess benefits, dependencies and indicative effort & Assess deferred requests for value, dependencies, indicative effort and impact on future priorities. & Project manager & 16 & Through final rollout (level of effort) & 9.1.1 SS; 8.2.2 FF. & Technical lead, HR/\allowbreak{}IT input, vendor guidance. & Each retained request has an indicative assessment; no unapproved enhancement added to current scope.\\\hline
+\textbf{Responsible role} & Project manager\\\hline
+\textbf{Effort (person-hours)} & 8\\\hline
 \rowcolor{MeridianPale}
-9.2.2\newline Review priorities with PM and CHRO at handover & Review register priorities with CHRO and transfer the future backlog to its operational owner. & Project manager & 8 & 1 working day & 9.2.1 FS; before final closure. & Prioritized register, CHRO and HR/\allowbreak{}IT operational owners. & CHRO endorses priorities; operational owner accepts register; future work remains subject to separate approval.\\\hline
+\textbf{Duration (working days)} & Through final rollout (level of effort)\\\hline
+\textbf{Dependencies} & 1.2.2 FS; maintained through final rollout.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Change log, stakeholder feedback, register template.\\\hline
+\textbf{Acceptance criteria} & Deferred requests have IDs, descriptions, requesters and status; register kept current at change reviews.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 9.2.1\newline Assess benefits, dependencies and indicative effort\\\hline
+\textbf{Description of work} & Assess deferred requests for value, dependencies, indicative effort and impact on future priorities.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Project manager\\\hline
+\textbf{Effort (person-hours)} & 16\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & Through final rollout (level of effort)\\\hline
+\textbf{Dependencies} & 9.1.1 SS; 8.2.2 FF.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Technical lead, HR/\allowbreak{}IT input, vendor guidance.\\\hline
+\textbf{Acceptance criteria} & Each retained request has an indicative assessment; no unapproved enhancement added to current scope.\\\hline
+\end{tabular}\\[6pt]
+\begin{tabular}{|L{\dimexpr .27\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|L{\dimexpr .73\linewidth-2\tabcolsep-1.5\arrayrulewidth\relax}|}
+\hline
+\rowcolor{MeridianLavender}
+\textbf{WBS ID and work package} & 9.2.2\newline Review priorities with PM and CHRO at handover\\\hline
+\textbf{Description of work} & Review register priorities with CHRO and transfer the future backlog to its operational owner.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Responsible role} & Project manager\\\hline
+\textbf{Effort (person-hours)} & 8\\\hline
+\rowcolor{MeridianPale}
+\textbf{Duration (working days)} & 1 working day\\\hline
+\textbf{Dependencies} & 9.2.1 FS; before final closure.\\\hline
+\rowcolor{MeridianPale}
+\textbf{Required resources} & Prioritized register, CHRO and HR/\allowbreak{}IT operational owners.\\\hline
+\textbf{Acceptance criteria} & CHRO endorses priorities; operational owner accepts register; future work remains subject to separate approval.\\\hline
+\end{tabular}\\[6pt]
 \end{longtable}
 \endgroup
-\end{landscape}
