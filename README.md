@@ -11,6 +11,11 @@ Google Sheet fields as separate columns and all 54 complete work-package rows.
 The WBS hierarchy is laid out across five vector landscape sheets. Vector chart
 details remain sharp when zoomed.
 
+The editable WBS master is `figures/meridian_wbs_landscape.drawio`: **one landscape
+canvas** containing the complete hierarchy. The report uses five readable detail
+views of that hierarchy. The existing Drive `WBS.drawio` has also been updated in
+place, preserving its file link, labels, phase notes and parent-child relationships.
+
 Compile from this directory with either:
 
 ```sh
